@@ -1,10 +1,30 @@
 
 {
-  "pioneeringTheFuture": "開創未來",
-  "biotechnology": "生物技術。",
-  "teamOfScientists": "我們是一支由科學家和工程師組成的團隊，致力於通過創新的研究和開發解決世界上最緊迫的挑戰。",
+  "hero": {
+    "title": "從蛋白質組的全方位結合圖譜到藥物開發和精準醫療的實際決策",
+    "subtitle": "我們是一支由科學家和工程師組成的團隊，致力於通過創新的研究和開發，解決世界上最緊迫的挑戰。"
+  },
   "ourTechnology": "我們的技術",
-  "learnMore": "學到更多",
+  "comparison": {
+    "title": "高通量蛋白質微陣列 vs. ELISA",
+    "proteinMicroarray": {
+      "title": "蛋白質微陣列",
+      "points": [
+        "高通量，一次分析數千種蛋白質。",
+        "僅需極少量樣本。",
+        "適用於生物標誌物發現和蛋白質組全方位分析。"
+      ]
+    },
+    "elisa": {
+      "title": "ELISA",
+      "points": [
+        "低通量，一次僅分析一種蛋白質。",
+        "需要較大的樣本量。",
+        "用於定量特定、已知蛋白質的標準方法。"
+      ]
+    }
+  },
+  "learnMore": "了解更多",
   "footer": {
     "hq": "蛋白質體陣列聯盟",
     "address": {

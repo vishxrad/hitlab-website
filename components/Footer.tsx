@@ -34,13 +34,13 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4 uppercase">{t('footer.helpfulLinks')}</h3>
             <ul className="text-sm space-y-2">
-              <li><a href="#" className="hover:underline">{t('footer.links.reportSideEffect')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.links.patientHelp')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.links.supplierHelp')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.links.productList')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.links.contactUs')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.links.codeOfConduct')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.links.esgReporting')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.links.reportSideEffect')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.links.patientHelp')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.links.supplierHelp')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.links.productList')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.links.contactUs')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.links.codeOfConduct')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.links.esgReporting')}</a></li>
             </ul>
           </div>
 
@@ -48,13 +48,13 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4 uppercase">{t('footer.followUs')}</h3>
             <ul className="text-sm space-y-2">
-              <li><a href="#" className="hover:underline">{t('footer.social.guidelines')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.social.linkedin')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.social.youtube')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.social.facebook')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.social.twitter')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.social.instagram')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.social.tiktok')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.guidelines')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.linkedin')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.youtube')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.facebook')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.twitter')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.instagram')}</a></li>
+              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.tiktok')}</a></li>
             </ul>
           </div>
         </div>
@@ -68,9 +68,9 @@ const Footer = () => {
           </div>
           <div className="flex flex-wrap gap-4 justify-center md:justify-end">
             <span>{t('footer.copyright')}</span>
-            <a href="#" className="hover:underline">{t('footer.dataPrivacy')}</a>
-            <a href="#" className="hover:underline">{t('footer.cookiePolicy')}</a>
-            <a href="#" className="hover:underline">{t('footer.cookieSettings')}</a>
+            <a href="#" className="hover:underline hover:text-blue-600">{t('footer.dataPrivacy')}</a>
+            <a href="#" className="hover:underline hover:text-blue-600">{t('footer.cookiePolicy')}</a>
+            <a href="#" className="hover:underline hover:text-blue-600">{t('footer.cookieSettings')}</a>
           </div>
         </div>
       </div>

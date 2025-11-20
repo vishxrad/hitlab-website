@@ -14,9 +14,9 @@ const ProteinSpot = ({ id, initialType }: { id: string, initialType: 'red' | 'gr
       if (intensity > 0.4) return 'bg-red-500';
       return 'bg-red-400';
     } else {
-      if (intensity > 0.7) return 'bg-green-700';
-      if (intensity > 0.4) return 'bg-green-500';
-      return 'bg-green-400';
+      if (intensity > 0.7) return 'bg-blue-700';
+      if (intensity > 0.4) return 'bg-blue-500';
+      return 'bg-blue-400';
     }
   };
 
@@ -87,10 +87,11 @@ const StatCard = ({ label, value, icon: Icon, trend }: { label: string, value: s
       <div className="text-gray-500 text-xs uppercase tracking-wider font-semibold">{label}</div>
       <div className="text-gray-900 text-xl font-bold flex items-baseline gap-2">
         {value}
-        {trend && <span className="text-emerald-600 text-xs font-normal">{trend}</span>}
+        {trend && <span className="text-blue-600 text-xs font-normal">{trend}</span>}
       </div>
     </div>
   </div>
 );
+
 
 export { ProteinSpot, MicroarrayChip, StatCard };
