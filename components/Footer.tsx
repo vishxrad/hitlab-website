@@ -6,7 +6,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-[#00355F] text-white py-12 mt-12">
+    <footer className="bg-gray-100 text-gray-800 py-12 mt-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* HQ Section */}
@@ -14,13 +14,18 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4 uppercase">{t('footer.hq')}</h3>
             <address className="not-italic text-sm space-y-2">
               <p>{t('footer.address.name')}</p>
+              <p>{t('footer.address.department')}</p>
+              <p>{t('footer.address.university')}</p>
               <p>{t('footer.address.street')}</p>
               <p>{t('footer.address.city')}</p>
               <p>{t('footer.address.country')}</p>
-              <p>{t('footer.address.phone')}</p>
-              {/* <p>{t('footer.address.cvr')}</p> */}
+              <p>
+                <a href={`tel:${t('footer.address.phone').replace(/\s/g, '')}`} className="hover:underline">
+                  {t('footer.address.phone')}
+                </a>
+              </p>
             </address>
-            <p className="mt-4 text-xs text-gray-300">
+            <p className="mt-4 text-xs text-gray-500">
               {t('footer.disclaimer')}
             </p>
           </div>
@@ -55,7 +60,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-blue-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+        <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
           <div className="mb-4 md:mb-0">
              <a href="#" className="hover:underline flex items-center gap-2">
                 <span>{t('footer.findOffice')}</span>

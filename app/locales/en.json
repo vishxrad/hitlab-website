@@ -8,8 +8,10 @@
   "footer": {
     "hq": "Proteome Array Alliance",
     "address": {
-      "name": "High-Throughput Protein Microarray Technology and Biomedical Industry Service Alliance Department of Food Safety/Hygiene and Risk Management",
-      "street": "College of Medicine, National Cheng Kung University No. 1, Daxue Rd., East Dist.,",
+      "name": "High-Throughput Protein Microarray Technology and Biomedical Industry Service Alliance",
+      "department": "Department of Food Safety/Hygiene and Risk Management",
+      "university": "College of Medicine, National Cheng Kung University",
+      "street": "No. 1, Daxue Rd., East Dist.,",
       "city": "Tainan City 701401",
       "country": "Taiwan",
       "phone": "06-2353535 Ext.1535"

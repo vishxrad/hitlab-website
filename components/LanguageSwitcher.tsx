@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
     <div className="flex items-center">
       <button
         onClick={toggleLanguage}
-        className="px-4 py-2 rounded bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+        className="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition-colors"
       >
         {i18n.language === 'en' ? '繁體中文' : 'English'}
       </button>

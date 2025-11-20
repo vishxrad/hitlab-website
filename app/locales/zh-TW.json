@@ -6,14 +6,15 @@
   "ourTechnology": "我們的技術",
   "learnMore": "學到更多",
   "footer": {
-    "hq": "HitLab 總部",
+    "hq": "蛋白質體陣列聯盟",
     "address": {
-      "name": "HitLab A/S",
-      "street": "Novo Allé 1",
-      "city": "2880 Bagsværd",
-      "country": "丹麥",
-      "phone": "+45 4444 8888",
-      "cvr": "CVR-no. 24256790"
+      "name": "高通量蛋白質微陣列技術與生物醫學產業服務聯盟",
+      "department": "食品安全/衛生與風險管理學系",
+      "university": "國立成功大學醫學院",
+      "street": "大學路一號東區",
+      "city": "台南市 701401",
+      "country": "台灣",
+      "phone": "06-2353535 分機1535"
     },
     "disclaimer": "我們的藥物僅用於其在當地國家或地區獲准的適應症。欲了解更多信息，請訪問我們的產品頁面。",
     "helpfulLinks": "常用連結",
