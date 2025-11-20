@@ -1,0 +1,44 @@
+
+{
+  "pioneeringTheFuture": "Pioneering the Future of",
+  "biotechnology": "Biotechnology.",
+  "teamOfScientists": "We are a team of scientists and engineers dedicated to solving the world's most pressing challenges through innovative research and development.",
+  "ourTechnology": "Our Technology",
+  "learnMore": "Learn More",
+  "footer": {
+    "hq": "Proteome Array Alliance",
+    "address": {
+      "name": "High-Throughput Protein Microarray Technology and Biomedical Industry Service Alliance Department of Food Safety/Hygiene and Risk Management",
+      "street": "College of Medicine, National Cheng Kung University No. 1, Daxue Rd., East Dist.,",
+      "city": "Tainan City 701401",
+      "country": "Taiwan",
+      "phone": "06-2353535 Ext.1535"
+    },
+    "disclaimer": "Our medicines are for the approved indication for which they are authorised in the local country or region. For more information, please visit our product page.",
+    "helpfulLinks": "Helpful Links",
+    "links": {
+      "reportSideEffect": "Report a side effect",
+      "patientHelp": "Patient help",
+      "supplierHelp": "Supplier help",
+      "productList": "Product list",
+      "contactUs": "Contact us",
+      "codeOfConduct": "Code of conduct",
+      "esgReporting": "ESG reporting"
+    },
+    "followUs": "Follow Us",
+    "social": {
+      "guidelines": "Social media community guidelines",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube",
+      "facebook": "Facebook",
+      "twitter": "X (Twitter)",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    },
+    "findOffice": "Find your local office",
+    "copyright": "© 2025 HitLab. All rights reserved.",
+    "dataPrivacy": "Data Privacy",
+    "cookiePolicy": "Cookie policy",
+    "cookieSettings": "Cookie settings"
+  }
+}

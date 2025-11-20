@@ -1,0 +1,45 @@
+
+{
+  "pioneeringTheFuture": "開創未來",
+  "biotechnology": "生物技術。",
+  "teamOfScientists": "我們是一支由科學家和工程師組成的團隊，致力於通過創新的研究和開發解決世界上最緊迫的挑戰。",
+  "ourTechnology": "我們的技術",
+  "learnMore": "學到更多",
+  "footer": {
+    "hq": "HitLab 總部",
+    "address": {
+      "name": "HitLab A/S",
+      "street": "Novo Allé 1",
+      "city": "2880 Bagsværd",
+      "country": "丹麥",
+      "phone": "+45 4444 8888",
+      "cvr": "CVR-no. 24256790"
+    },
+    "disclaimer": "我們的藥物僅用於其在當地國家或地區獲准的適應症。欲了解更多信息，請訪問我們的產品頁面。",
+    "helpfulLinks": "常用連結",
+    "links": {
+      "reportSideEffect": "報告副作用",
+      "patientHelp": "患者幫助",
+      "supplierHelp": "供應商幫助",
+      "productList": "產品列表",
+      "contactUs": "聯繫我們",
+      "codeOfConduct": "行為準則",
+      "esgReporting": "ESG 報告"
+    },
+    "followUs": "關注我們",
+    "social": {
+      "guidelines": "社交媒體社區準則",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube",
+      "facebook": "Facebook",
+      "twitter": "X (Twitter)",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    },
+    "findOffice": "尋找當地辦事處",
+    "copyright": "© 2025 HitLab. 版權所有。",
+    "dataPrivacy": "數據隱私",
+    "cookiePolicy": "Cookie 政策",
+    "cookieSettings": "Cookie 設置"
+  }
+}
