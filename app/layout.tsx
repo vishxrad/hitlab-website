@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import I18nextProviderWrapper from "@/components/I18nextProvider";
+import FloatingContactButton from "@/components/FloatingContactButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
         <I18nextProviderWrapper>
           <Navbar />
           <main className="flex-grow">{children}</main>
+          <FloatingContactButton />
           <Footer />
         </I18nextProviderWrapper>
       </body>

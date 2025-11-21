@@ -6,6 +6,18 @@
     "technology": "Technology",
     "contact": "Contact"
   },
+  "contact": {
+    "button": "Contact us",
+    "title": "Contact us",
+    "description": "Share a bit about your project, and we will get back to you.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "cancel": "Cancel",
+    "submit": "Send message",
+    "submitting": "Sending...",
+    "success": "Thanks for reaching out! We'll be in touch shortly."
+  },
   "footer": {
     "hq": "Proteome Array Alliance",
     "address": {

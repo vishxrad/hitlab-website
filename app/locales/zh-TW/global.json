@@ -6,6 +6,18 @@
     "technology": "技術",
     "contact": "聯絡我們"
   },
+  "contact": {
+    "button": "聯絡我們",
+    "title": "聯絡我們",
+    "description": "請分享一些您的計畫資訊，我們會盡快與您聯繫。",
+    "nameLabel": "姓名",
+    "emailLabel": "電子郵件",
+    "messageLabel": "留言",
+    "cancel": "取消",
+    "submit": "送出訊息",
+    "submitting": "傳送中...",
+    "success": "感謝您的來信，我們將盡快回覆您。"
+  },
   "footer": {
     "hq": "蛋白質體陣列聯盟",
     "address": {
