@@ -10,72 +10,160 @@ type Protein = {
   entrez: string | null;
 };
 
+type SpotStatus = "strong" | "moderate" | "weak" | "failed";
+
+type SpotWithMetadata = {
+  protein: Protein | null;
+  type: "red" | "green";
+  status: SpotStatus;
+  bindingPercent: number; // 0-100
+};
+
+const ProteinHoverCard = ({
+  protein,
+  status,
+  bindingPercent,
+}: {
+  protein: Protein;
+  status: SpotStatus;
+  bindingPercent: number;
+}) => {
+  const isFailure = status === "failed";
+  return (
+    <div className="pointer-events-none fixed z-40 -translate-x-1/2 -translate-y-full whitespace-nowrap rounded-md bg-slate-900 px-3 py-1.5 text-xs font-medium text-slate-100 shadow-lg ring-1 ring-slate-700/80">
+      <div className="flex items-center gap-2">
+        <span
+          className={`h-1.5 w-1.5 rounded-full shadow-[0_0_8px_rgba(52,211,153,0.8)] ${
+            isFailure ? "bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.9)]" : "bg-emerald-400"
+          }`}
+        />
+        <span className="font-semibold tracking-wide">
+          {protein.gene}
+        </span>
+      </div>
+      <div className="mt-0.5 flex flex-col gap-0.5 text-[10px] text-slate-300/90">
+        <div className="flex gap-3">
+          <span>UniProt: {protein.uniprot ?? "N/A"}</span>
+          <span>Entrez: {protein.entrez ?? "N/A"}</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span
+            className={`inline-flex items-center rounded-sm px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wide ${
+              isFailure
+                ? "bg-red-500/20 text-red-300 ring-1 ring-red-500/40"
+                : "bg-emerald-500/15 text-emerald-300 ring-1 ring-emerald-500/40"
+            }`}
+          >
+            {isFailure ? "Low binding" : "Strong binding"}
+          </span>
+          <span className="text-slate-300/80">
+            Signal: {bindingPercent}%
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const ProteinSpot = ({
   protein,
-  initialType,
+  status,
+  bindingPercent,
 }: {
   protein: Protein | null;
-  initialType: "red" | "green";
+  status: SpotStatus;
+  bindingPercent: number;
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [mousePos, setMousePos] = useState<{ x: number; y: number } | null>(
+    null
+  );
 
-  // More realistic, less vibrant colors
+  // More realistic, less vibrant colors linked to status
   const getBaseColor = () => {
     const intensity = Math.random();
-    if (initialType === 'red') {
-      if (intensity > 0.7) return 'bg-red-700';
-      if (intensity > 0.4) return 'bg-red-500';
-      return 'bg-red-400';
-    } else {
-      if (intensity > 0.7) return 'bg-blue-700';
-      if (intensity > 0.4) return 'bg-blue-500';
-      return 'bg-blue-400';
+    if (status === "failed") {
+      // Visually highlight failed spots as red regardless of channel
+      if (intensity > 0.7) return "bg-red-700";
+      if (intensity > 0.4) return "bg-red-500";
+      return "bg-red-400";
     }
+    if (status === "strong" || status === "moderate") {
+      // Good binding: blue channel
+      if (intensity > 0.7) return "bg-blue-700";
+      if (intensity > 0.4) return "bg-blue-500";
+      return "bg-blue-400";
+    }
+    // weak but not completely failed: dimmer blue
+    if (intensity > 0.7) return "bg-blue-500";
+    if (intensity > 0.4) return "bg-blue-400";
+    return "bg-blue-300";
   };
 
-  const baseColorClass = useMemo(getBaseColor, [initialType]);
+  const baseColorClass = useMemo(getBaseColor, [status]);
+
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    setMousePos({ x: rect.left + rect.width / 2, y: rect.top });
+  };
 
   return (
     <div
+      className="relative flex items-center justify-center"
       onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      className={`
-        w-3 h-3 rounded-full 
-        transition-all duration-200 ease-in-out
-        ${
-          isHovered
-            ? "cursor-crosshair scale-150 ring-2 ring-offset-2 ring-offset-gray-100 ring-blue-500 z-10"
-            : "cursor-pointer"
-        }
-        ${baseColorClass}
-      `}
-      title={
-        protein
-          ? `${protein.gene} (UniProt: ${protein.uniprot ?? "N/A"}, Entrez: ${
-              protein.entrez ?? "N/A"
-            })`
-          : "Protein spot on the microarray."
-      }
-    />
+      onMouseLeave={() => {
+        setIsHovered(false);
+        setMousePos(null);
+      }}
+      onMouseMove={handleMouseMove}
+    >
+      {protein && isHovered && mousePos && (
+        <div
+          style={{ left: mousePos.x, top: mousePos.y }}
+        >
+            <ProteinHoverCard
+              protein={protein}
+              status={status}
+              bindingPercent={bindingPercent}
+            />
+        </div>
+      )}
+      <div
+        className={`
+          w-3 h-3 rounded-full
+          transition-transform transition-shadow duration-200 ease-out
+          ${
+            isHovered
+              ? "cursor-crosshair scale-150 shadow-[0_0_8px_rgba(56,189,248,0.8)] ring-2 ring-offset-2 ring-offset-gray-100 ring-blue-500 z-10"
+              : "cursor-pointer"
+          }
+          ${baseColorClass}
+        `}
+      />
+    </div>
   );
 };
 
 const MicroarrayChip = () => {
-  const gridData = useMemo(() => {
+  const gridData = useMemo<SpotWithMetadata[]>(() => {
     const rows = 12;
     const cols = 24;
     const totalSpots = rows * cols;
 
     const proteinList = (proteins as Protein[]).filter((p) => !!p.gene);
 
-    const spots: { protein: Protein | null; type: "red" | "green" }[] = [];
+    const spots: SpotWithMetadata[] = [];
 
     for (let i = 0; i < totalSpots; i++) {
       const type = Math.random() > 0.5 ? "red" : "green";
       const protein = proteinList.length
         ? proteinList[i % proteinList.length]
         : null;
-      spots.push({ protein, type });
+      const bindingPercent = Math.round(Math.random() * 100);
+      // Roughly 15% of spots are "failed" / low binding
+      const status: SpotStatus = bindingPercent < 25 ? "failed" : bindingPercent < 50 ? "weak" : bindingPercent < 80 ? "moderate" : "strong";
+
+      spots.push({ protein, type, status, bindingPercent });
     }
     return spots;
   }, []);
@@ -108,7 +196,8 @@ const MicroarrayChip = () => {
             <ProteinSpot
               key={index}
               protein={spot.protein}
-              initialType={spot.type}
+              status={spot.status}
+              bindingPercent={spot.bindingPercent}
             />
           ))}
         </div>
