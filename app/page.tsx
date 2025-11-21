@@ -5,17 +5,23 @@ import { CheckCircle2 } from 'lucide-react';
 
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans selection:bg-indigo-500/30">
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-6 pt-12 pb-24">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           
           {/* Left Column: Content */}
           <div className="space-y-8">
-            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
+            <h1
+              className={`font-extrabold tracking-tight text-gray-900 leading-tight ${
+                i18n.language === 'zh-TW'
+                  ? 'text-5xl md:text-7xl'
+                  : 'text-4xl md:text-6xl'
+              }`}
+            >
               {t('hero.title')}
             </h1>
             
@@ -31,7 +37,7 @@ export default function Home() {
             <div className="absolute -left-12 bottom-10 w-32 h-32 bg-indigo-100 rounded-full blur-3xl"></div>
             
             {/* The Main Chip Component */}
-            <div className="relative z-10">
+            <div className="relative z-10 mt-2">
               <MicroarrayChip />
             </div>
           </div>
