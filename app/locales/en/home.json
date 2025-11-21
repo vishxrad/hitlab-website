@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "title": "From proteome-wide binding maps to real-world decisions in drug development and precision medicine",
+    "subtitle": "We are a team of scientists and engineers dedicated to solving the world's most pressing challenges through innovative research and development."
+  },
+  "ourTechnology": "Our Technology",
+  "comparison": {
+    "title": "High-Throughput Protein Microarray vs. ELISA",
+    "proteinMicroarray": {
+      "title": "Protein Microarray",
+      "points": [
+        "High throughput, analyzing thousands of proteins at once.",
+        "Requires minimal sample volume.",
+        "Ideal for biomarker discovery and proteome-wide analysis."
+      ]
+    },
+    "elisa": {
+      "title": "ELISA",
+      "points": [
+        "Low throughput, analyzing one protein at a time.",
+        "Requires larger sample volumes.",
+        "Standard for quantifying specific, known proteins."
+      ]
+    }
+  },
+  "learnMore": "Learn More"
+}

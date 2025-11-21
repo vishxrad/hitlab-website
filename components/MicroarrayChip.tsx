@@ -64,9 +64,15 @@ const MicroarrayChip = () => {
         <div className="absolute top-2 left-3 text-[10px] font-mono text-gray-500">
           <span>ARRAY-V4.2 // HUMAN-IGG</span>
         </div>
-        <div className="absolute bottom-2 right-3 text-[10px] font-mono text-gray-400">
+        <div className="absolute bottom-0 right-3 text-[10px] font-mono text-gray-400">
           BATCH: 884-XJ
         </div>
+
+        {/* The Scanner Bar Animation */}
+        <div className="
+          absolute top-0 left-0 w-full h-1 bg-indigo-500/50 shadow-[0_0_15px_rgba(99,102,241,0.5)]
+          animate-scan pointer-events-none z-20
+        "></div>
 
         <div className="grid grid-cols-[repeat(24,minmax(0,1fr))] gap-2 mt-6">
           {gridData.map((spot) => (
