@@ -2,9 +2,10 @@
   "header": {
     "brand": "HitLab",
     "home": "Home",
-    "about": "About",
+    "aboutUs": "About us",
     "technology": "Technology",
-    "contact": "Contact"
+    "blog": "Blog / News",
+    "contactUs": "Contact us"
   },
   "contact": {
     "button": "Contact us",

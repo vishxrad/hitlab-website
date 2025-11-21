@@ -13,17 +13,17 @@ const Navbar = () => {
           {t('header.brand')}
         </Link>
         <div className="flex items-center space-x-4">
-          <Link href="/" className="text-gray-600 hover:text-blue-600">
-            {t('header.home')}
-          </Link>
           <Link href="/about" className="text-gray-600 hover:text-blue-600">
-            {t('header.about')}
+            {t('header.aboutUs')}
           </Link>
           <Link href="/technology" className="text-gray-600 hover:text-blue-600">
             {t('header.technology')}
           </Link>
+          <Link href="/blog" className="text-gray-600 hover:text-blue-600">
+            {t('header.blog')}
+          </Link>
           <Link href="/contact" className="text-gray-600 hover:text-blue-600">
-            {t('header.contact')}
+            {t('header.contactUs')}
           </Link>
           <LanguageSwitcher />
         </div>

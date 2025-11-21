@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState, useMemo } from "react";
 import { Activity, Cpu, Zap, Search, Database, BarChart3, Dna, Microscope } from "lucide-react";
@@ -30,18 +29,18 @@ const ProteinHoverCard = ({
 }) => {
   const isFailure = status === "failed";
   return (
-    <div className="pointer-events-none fixed z-40 -translate-x-1/2 -translate-y-full whitespace-nowrap rounded-md bg-slate-900 px-3 py-1.5 text-xs font-medium text-slate-100 shadow-lg ring-1 ring-slate-700/80">
+    <div className="pointer-events-none fixed z-40 -translate-x-1/2 -translate-y-full whitespace-nowrap rounded-md bg-white px-3 py-1.5 text-xs font-medium text-slate-900 shadow-lg ring-1 ring-slate-200">
       <div className="flex items-center gap-2">
         <span
-          className={`h-1.5 w-1.5 rounded-full shadow-[0_0_8px_rgba(52,211,153,0.8)] ${
-            isFailure ? "bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.9)]" : "bg-emerald-400"
+          className={`h-1.5 w-1.5 rounded-full shadow-[0_0_6px_rgba(34,197,94,0.8)] ${
+            isFailure ? "bg-red-400 shadow-[0_0_6px_rgba(248,113,113,0.9)]" : "bg-emerald-400"
           }`}
         />
-        <span className="font-semibold tracking-wide">
+        <span className="font-semibold tracking-wide text-slate-900">
           {protein.gene}
         </span>
       </div>
-      <div className="mt-0.5 flex flex-col gap-0.5 text-[10px] text-slate-300/90">
+      <div className="mt-0.5 flex flex-col gap-0.5 text-[10px] text-slate-600">
         <div className="flex gap-3">
           <span>UniProt: {protein.uniprot ?? "N/A"}</span>
           <span>Entrez: {protein.entrez ?? "N/A"}</span>
@@ -50,13 +49,13 @@ const ProteinHoverCard = ({
           <span
             className={`inline-flex items-center rounded-sm px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wide ${
               isFailure
-                ? "bg-red-500/20 text-red-300 ring-1 ring-red-500/40"
-                : "bg-emerald-500/15 text-emerald-300 ring-1 ring-emerald-500/40"
+                ? "bg-red-100 text-red-700 ring-1 ring-red-200"
+                : "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200"
             }`}
           >
             {isFailure ? "Low binding" : "Strong binding"}
           </span>
-          <span className="text-slate-300/80">
+          <span className="text-slate-500">
             Signal: {bindingPercent}%
           </span>
         </div>
@@ -200,6 +199,21 @@ const MicroarrayChip = () => {
               bindingPercent={spot.bindingPercent}
             />
           ))}
+        </div>
+        {/* Color key / legend */}
+        <div className="mt-4 flex flex-wrap items-center gap-4 text-[11px] text-gray-600">
+          <div className="flex items-center gap-2">
+            <span className="h-2.5 w-2.5 rounded-full bg-blue-500" />
+            <span>Detected binding signal</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="h-2.5 w-2.5 rounded-full bg-blue-300" />
+            <span>Weak / low-intensity signal</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="h-2.5 w-2.5 rounded-full bg-red-500" />
+            <span>Failed / very low binding</span>
+          </div>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ const LanguageSwitcher = () => {
         onClick={toggleLanguage}
         className="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition-colors"
       >
-        {i18n.language === 'en' ? '繁體中文' : 'English'}
+        {i18n.language === 'en' ? '中文' : 'English'}
       </button>
     </div>
   );
