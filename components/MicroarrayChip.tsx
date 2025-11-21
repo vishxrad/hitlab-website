@@ -1,9 +1,22 @@
 
-'use client';
-import React, { useState, useEffect, useMemo } from 'react';
-import { Activity, Cpu, Zap, Search, Database, BarChart3, Dna, Microscope } from 'lucide-react';
+"use client";
+import React, { useState, useMemo } from "react";
+import { Activity, Cpu, Zap, Search, Database, BarChart3, Dna, Microscope } from "lucide-react";
+import proteins from "../public/human-proteins.json";
 
-const ProteinSpot = ({ id, initialType }: { id: string, initialType: 'red' | 'green' }) => {
+type Protein = {
+  gene: string;
+  uniprot: string | null;
+  entrez: string | null;
+};
+
+const ProteinSpot = ({
+  protein,
+  initialType,
+}: {
+  protein: Protein | null;
+  initialType: "red" | "green";
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   // More realistic, less vibrant colors
@@ -29,24 +42,40 @@ const ProteinSpot = ({ id, initialType }: { id: string, initialType: 'red' | 'gr
       className={`
         w-3 h-3 rounded-full 
         transition-all duration-200 ease-in-out
-        cursor-pointer
+        ${
+          isHovered
+            ? "cursor-crosshair scale-150 ring-2 ring-offset-2 ring-offset-gray-100 ring-blue-500 z-10"
+            : "cursor-pointer"
+        }
         ${baseColorClass}
-        ${isHovered ? 'scale-150 ring-2 ring-offset-2 ring-offset-gray-100 ring-blue-500 z-10' : ''}
       `}
-      title={`Protein ID: ${id}`}
+      title={
+        protein
+          ? `${protein.gene} (UniProt: ${protein.uniprot ?? "N/A"}, Entrez: ${
+              protein.entrez ?? "N/A"
+            })`
+          : "Protein spot on the microarray."
+      }
     />
   );
 };
 
 const MicroarrayChip = () => {
   const gridData = useMemo(() => {
-    const spots: { id: string; type: 'red' | 'green' }[] = [];
-    const rows = 12; 
-    const cols = 24; 
-    
-    for (let i = 0; i < rows * cols; i++) {
-      const type = Math.random() > 0.5 ? 'red' : 'green';
-      spots.push({ id: `P-${1000 + i}`, type });
+    const rows = 12;
+    const cols = 24;
+    const totalSpots = rows * cols;
+
+    const proteinList = (proteins as Protein[]).filter((p) => !!p.gene);
+
+    const spots: { protein: Protein | null; type: "red" | "green" }[] = [];
+
+    for (let i = 0; i < totalSpots; i++) {
+      const type = Math.random() > 0.5 ? "red" : "green";
+      const protein = proteinList.length
+        ? proteinList[i % proteinList.length]
+        : null;
+      spots.push({ protein, type });
     }
     return spots;
   }, []);
@@ -75,8 +104,12 @@ const MicroarrayChip = () => {
         "></div>
 
         <div className="grid grid-cols-[repeat(24,minmax(0,1fr))] gap-2 mt-6">
-          {gridData.map((spot) => (
-            <ProteinSpot key={spot.id} id={spot.id} initialType={spot.type} />
+          {gridData.map((spot, index) => (
+            <ProteinSpot
+              key={index}
+              protein={spot.protein}
+              initialType={spot.type}
+            />
           ))}
         </div>
       </div>
