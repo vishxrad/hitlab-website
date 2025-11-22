@@ -1,0 +1,55 @@
+{
+  "title": "About HitLab",
+  "description1": "HitLab is a multidisciplinary team of scientists, engineers, and clinicians focused on high-throughput protein microarray technology. We bridge fundamental proteomics research and real-world clinical applications in drug development and precision medicine.",
+  "description2": "Our work spans assay development, biomarker discovery, and translational collaborations with academic medical centers and industry partners. We combine robust wet-lab pipelines with modern data analysis and visualization to help researchers make confident decisions from complex proteome-wide data.",
+  "leadership": {
+    "title": "Leadership",
+    "role": "Principal Investigator",
+    "title2": "Distinguished Professor, NCKU",
+    "bio": "A pioneer in proteome microarray technology with a focus on high-throughput biosensing, host-microbe interactions, and food pathogen detection.",
+    "quote": "Investors bet on the scientist behind the tech."
+  },
+  "timeline": {
+    "current": "Current Positions",
+    "professor": "Professor",
+    "dept": "Department of Food Safety/Hygiene and Risk Management, NCKU",
+    "president": "President",
+    "society": "Taiwan Proteomics Society",
+    "awards": "Honors & Awards",
+    "recognition": "Recognition of Excellence",
+    "ncu": "National Central University (NCU)",
+    "ncuRoles": [
+      "Professor, Dept. of Biomedical Science & Engineering (2016)",
+      "Director, Graduate Institute of Systems Biology & Bioinformatics (2015–2017)",
+      "Associate Professor (2012–2016)",
+      "Assistant Professor (2008–2012)"
+    ],
+    "jhu": "Johns Hopkins University",
+    "postdoc": "Postdoctoral Fellow, High Throughput Biology Center.",
+    "education": "Education",
+    "academicBackground": "Academic Background",
+    "phd": "Ph.D.",
+    "cornell": "Cornell University",
+    "ms": "M.S.",
+    "ntu": "National Taiwan University",
+    "bs": "B.S.",
+    "ntou": "National Taiwan Ocean University"
+  },
+  "bioinformatics": {
+    "title": "Bioinformatics & Data",
+    "subtitle": "Handling the Data Load",
+    "description": "High-throughput proteomics generates massive datasets. Our dedicated bioinformatics team ensures that every pixel from our scanners is accurately converted into biological insight. We utilize custom pipelines for normalization, background subtraction, and statistical analysis.",
+    "points": [
+      "Automated image processing pipelines",
+      "Cloud-scalable storage for terabytes of array data",
+      "Interactive visualization tools for clients"
+    ]
+  },
+  "facilities": {
+    "title": "Our Facilities",
+    "description": "We operate a fully equipped proteomic profiling facility, not just a laptop. Our lab houses industrial-grade contact printers, high-resolution fluorescence scanners, and automated liquid handling robots to ensure reproducibility at scale.",
+    "printer": "Microarray Printer",
+    "scanner": "Fluorescence Scanner",
+    "bench": "Wet Lab Bench"
+  }
+}

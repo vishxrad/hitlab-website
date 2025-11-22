@@ -1,11 +1,12 @@
 {
   "header": {
-    "brand": "HitLab",
+    "brand": "PAA",
     "home": "首頁",
     "aboutUs": "關於我們",
     "technology": "技術",
+    "publications": "研究成果",
     "blog": "最新消息",
-    "contactUs": "聯絡我們"
+    "contactUs": "加入我們"
   },
   "contact": {
     "button": "聯絡我們",

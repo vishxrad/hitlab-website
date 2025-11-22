@@ -1,0 +1,19 @@
+{
+  "title": "Publications",
+  "description": "Selected peer-reviewed papers, conference abstracts, and case studies where high-throughput protein microarrays play a central role.",
+  "researchModules": "Research Modules",
+  "portalName": "HTPM Portal",
+  "databaseVersion": "Database v2.4.0",
+  "detailView": "Research Detail View",
+  "authors": "Authors",
+  "category": "Category",
+  "readFullPaper": "Read Full Paper",
+  "opensInNewTab": "Opens in new tab",
+  "close": "Close",
+  "searchPlaceholder": "Search titles or authors...",
+  "repository": "Repository",
+  "papers": "Papers",
+  "noPapersFound": "No papers found",
+  "adjustSearch": "Try adjusting your search terms.",
+  "published": "Published"
+}

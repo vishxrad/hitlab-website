@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslation } from 'react-i18next';
+import { Globe } from 'lucide-react';
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -11,14 +12,16 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="flex items-center">
-      <button
-        onClick={toggleLanguage}
-        className="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition-colors"
-      >
+    <button
+      onClick={toggleLanguage}
+      className="flex items-center gap-2 px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+      aria-label="Switch language"
+    >
+      <Globe className="w-4 h-4" />
+      <span className="text-sm font-medium">
         {i18n.language === 'en' ? '中文' : 'English'}
-      </button>
-    </div>
+      </span>
+    </button>
   );
 };
 

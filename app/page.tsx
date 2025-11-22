@@ -1,5 +1,5 @@
 'use client';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { MicroarrayChip } from '@/components/MicroarrayChip';
 import { CheckCircle2 } from 'lucide-react';
 
@@ -16,16 +16,22 @@ export default function Home() {
           {/* Left Column: Content */}
           <div className="space-y-8">
             <h1
-              className={`font-extrabold tracking-tight text-gray-900 leading-tight ${
+              className={`font-bold tracking-tight text-gray-900 leading-tight ${
                 i18n.language === 'zh-TW'
                   ? 'text-5xl md:text-7xl'
                   : 'text-4xl md:text-6xl'
               }`}
             >
-              {t('hero.title')}
+              <Trans
+                t={t}
+                i18nKey="hero.title"
+                components={{
+                  highlight: <span className="text-blue-600 font-extrabold" />,
+                }}
+              />
             </h1>
             
-            <p className="text-lg text-gray-600 max-w-lg leading-relaxed">
+            <p className="text-lg text-blue-600 font-medium max-w-lg leading-relaxed">
               {t('hero.subtitle')}
             </p>
           </div>

@@ -1,0 +1,14 @@
+{
+  "title": "News & Events",
+  "description": "Stay up to date with new data releases, platform improvements, and case studies from our high-throughput protein microarray projects.",
+  "post1": {
+    "title": "Launching our human proteome-wide microarray panel",
+    "description": "We now support more than 21,000 human proteins on a single wafer, enabling large-scale antibody and serum profiling in a single experiment.",
+    "meta": "Dummy post · Q1 2025"
+  },
+  "post2": {
+    "title": "Case study: Autoantibody signatures in early-stage disease",
+    "description": "Learn how high-throughput protein microarrays can reveal subtle changes in autoantibody profiles before clinical symptoms appear.",
+    "meta": "Dummy post · Q4 2024"
+  }
+}

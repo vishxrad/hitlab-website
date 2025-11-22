@@ -6,19 +6,35 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // English resources
 import enGlobal from './locales/en/global.json';
 import enHome from './locales/en/home.json';
+import enTechnology from './locales/en/technology.json';
+import enAbout from './locales/en/about.json';
+import enPublications from './locales/en/publications.json';
+import enBlog from './locales/en/blog.json';
 
 // Traditional Chinese resources
 import zhTWGlobal from './locales/zh-TW/global.json';
 import zhTWHome from './locales/zh-TW/home.json';
+import zhTWTechnology from './locales/zh-TW/technology.json';
+import zhTWAbout from './locales/zh-TW/about.json';
+import zhTWPublications from './locales/zh-TW/publications.json';
+import zhTWBlog from './locales/zh-TW/blog.json';
 
 const en = {
   ...enHome,
   ...enGlobal,
+  technology: enTechnology,
+  about: enAbout,
+  publications: enPublications,
+  blog: enBlog,
 };
 
 const zhTW = {
   ...zhTWHome,
   ...zhTWGlobal,
+  technology: zhTWTechnology,
+  about: zhTWAbout,
+  publications: zhTWPublications,
+  blog: zhTWBlog,
 };
 
 i18n

@@ -1,11 +1,12 @@
 {
   "header": {
-    "brand": "HitLab",
+    "brand": "PAA",
     "home": "Home",
     "aboutUs": "About us",
     "technology": "Technology",
-    "blog": "Blog / News",
-    "contactUs": "Contact us"
+    "publications": "Publications",
+    "blog": "News & Events",
+    "contactUs": "Join us"
   },
   "contact": {
     "button": "Contact us",

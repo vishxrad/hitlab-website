@@ -13,19 +13,25 @@ const Navbar = () => {
           {t('header.brand')}
         </Link>
         <div className="flex items-center space-x-4">
+          <Link href="/technology" className="text-gray-600 hover:text-blue-600">
+            {t('header.technology')}
+          </Link>
           <Link href="/about" className="text-gray-600 hover:text-blue-600">
             {t('header.aboutUs')}
           </Link>
-          <Link href="/technology" className="text-gray-600 hover:text-blue-600">
-            {t('header.technology')}
+          <Link href="/publications" className="text-gray-600 hover:text-blue-600">
+            {t('header.publications')}
           </Link>
           <Link href="/blog" className="text-gray-600 hover:text-blue-600">
             {t('header.blog')}
           </Link>
-          <Link href="/contact" className="text-gray-600 hover:text-blue-600">
+          <LanguageSwitcher />
+          <Link
+            href="/contact"
+            className="inline-flex items-center rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 hover:shadow-md transition"
+          >
             {t('header.contactUs')}
           </Link>
-          <LanguageSwitcher />
         </div>
       </div>
     </nav>

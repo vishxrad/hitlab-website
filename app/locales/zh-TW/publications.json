@@ -1,0 +1,19 @@
+{
+  "title": "出版物",
+  "description": "精選的同行評審論文、會議摘要和案例研究，其中高通量蛋白質微陣列發揮了核心作用。",
+  "researchModules": "研究模組",
+  "portalName": "HTPM 入口網站",
+  "databaseVersion": "資料庫 v2.4.0",
+  "detailView": "研究詳細視圖",
+  "authors": "作者",
+  "category": "類別",
+  "readFullPaper": "閱讀全文",
+  "opensInNewTab": "在新分頁開啟",
+  "close": "關閉",
+  "searchPlaceholder": "搜尋標題或作者...",
+  "repository": "資料庫",
+  "papers": "篇論文",
+  "noPapersFound": "未找到論文",
+  "adjustSearch": "請嘗試調整您的搜尋詞。",
+  "published": "已發表"
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Our Technology",
+  "description": "We combine high-throughput protein microarray wafers with robust assay development and analysis pipelines to profile thousands of proteins in a single experiment.",
+  "platforms": {
+    "title": "Proteome chip platforms",
+    "description": "Different projects need different levels of coverage. We offer discovery-scale chips that span most of the human proteome, as well as focused panels and truly custom arrays built around your biology.",
+    "human": {
+      "title": "Human proteome-wide chip",
+      "description": "A discovery platform covering tens of thousands of human proteins on a single wafer. Ideal for mapping autoantibody landscapes, off-target binding, and early biomarker signatures when you don't yet know which antigens matter."
+    },
+    "focused": {
+      "title": "Focused disease panels",
+      "description": "Curated subsets of proteins tuned to specific disease areas (for example oncology, autoimmunity, or infectious disease). These panels trade breadth for depth and higher throughput in well-defined indication spaces."
+    },
+    "custom": {
+      "title": "Custom protein arrays",
+      "description": "Bring your own targets, antibodies, or candidate panels. We work with you to design custom spotting layouts and controls so you can answer very specific mechanistic or developability questions."
+    },
+    "analysis": {
+      "title": "Signal readout & analysis",
+      "description": "High-dynamic-range fluorescence imaging, quality control, and downstream analytics convert raw spot intensities into interpretable binding profiles, signatures, and ranked lists you can act on."
+    },
+    "visualNote": "The chip visual on our homepage is a stylized view of the same high-density wafers we run in the lab—each spot corresponds to a cloned protein, printed, probed, and quantified."
+  },
+  "publications": {
+    "title": "Publications & case studies",
+    "description": "A selection of work where high-throughput protein microarrays have been central to the experimental design. Replace these placeholders with your actual papers, abstracts, and collaborations.",
+    "peerReviewed": "Peer-reviewed publications (examples)",
+    "conference": "Conference abstracts & workshops (examples)",
+    "caseStudies": "Case studies (placeholders)"
+  }
+}
