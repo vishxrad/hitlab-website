@@ -1,14 +1,47 @@
 {
   "title": "News & Events",
   "description": "Stay up to date with new data releases, platform improvements, and case studies from our high-throughput protein microarray projects.",
-  "post1": {
-    "title": "Launching our human proteome-wide microarray panel",
-    "description": "We now support more than 21,000 human proteins on a single wafer, enabling large-scale antibody and serum profiling in a single experiment.",
-    "meta": "Dummy post · Q1 2025"
-  },
-  "post2": {
-    "title": "Case study: Autoantibody signatures in early-stage disease",
-    "description": "Learn how high-throughput protein microarrays can reveal subtle changes in autoantibody profiles before clinical symptoms appear.",
-    "meta": "Dummy post · Q4 2024"
-  }
+  "readMore": "Read more",
+  "articles": [
+    {
+      "id": 1,
+      "title": "✨ [2025 7th Joint Conference on Multi-Omics and Precision Medicine MOPM Taiwan Taipei] Successfully Concluded! 🔬",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-217248,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 2,
+      "title": "Mastering Future Trends: [Food Safety Institute x Interdisciplinary Course] Industrialization and Expansion of Innovative Technical Services",
+      "link": "https://htpm.web2.ncku.edu.tw/p/405-1217-216731,c26725.php?Lang=zh-tw"
+    },
+    {
+      "id": 3,
+      "title": "Protein Microarray Technology | Leading Solutions for High-Throughput Protein Analysis and Applications",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-216481,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 4,
+      "title": "Review [2025 Antibody Drugs and 20th Advanced Biomedical Knowledge Symposium]",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-216452,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 5,
+      "title": "High-Throughput Protein Microarray Chip Technology and Biomedical Industry Service Alliance Workshop",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-215600,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 6,
+      "title": "Alliance Publications",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-215473,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 7,
+      "title": "Core Service Solutions",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-215470,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 8,
+      "title": "Alliance Introduction",
+      "link": "https://htpm.web2.ncku.edu.tw/p/404-1217-215469.php?Lang=zh-tw"
+    }
+  ]
 }

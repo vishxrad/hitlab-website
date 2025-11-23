@@ -1,14 +1,47 @@
 {
   "title": "最新消息與活動",
   "description": "隨時了解我們高通量蛋白質微陣列專案的最新數據發布、平台改進和案例研究。",
-  "post1": {
-    "title": "推出我們的人類全蛋白質組微陣列面板",
-    "description": "我們現在在單個晶圓上支持超過 21,000 種人類蛋白質，從而能夠在單次實驗中進行大規模抗體和血清分析。",
-    "meta": "範例文章 · 2025 年第一季度"
-  },
-  "post2": {
-    "title": "案例研究：早期疾病中的自體抗體特徵",
-    "description": "了解高通量蛋白質微陣列如何在臨床症狀出現之前揭示自體抗體譜的細微變化。",
-    "meta": "範例文章 · 2024 年第四季度"
-  }
+  "readMore": "閱讀更多",
+  "articles": [
+    {
+      "id": 1,
+      "title": "✨【2025第七屆多體學及精準醫學聯合會議 MOPM Taiwan Taipei】 圓滿落幕！🔬",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-217248,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 2,
+      "title": "掌握未來趨勢：【食安所 x 不分系 跨域課程】創新技術服務的產業化與擴展 — 從科研到商業的平台設計實作！",
+      "link": "https://htpm.web2.ncku.edu.tw/p/405-1217-216731,c26725.php?Lang=zh-tw"
+    },
+    {
+      "id": 3,
+      "title": "蛋白質微陣列技術｜高通量蛋白質分析與應用領先解決方案",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-216481,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 4,
+      "title": "回顧【2025抗體藥物暨第20屆前瞻生醫新知研討會】",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-216452,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 5,
+      "title": "高通量蛋白質微陣列晶片技術與生醫產業服務聯盟工作坊",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-215600,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 6,
+      "title": "聯盟發表",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-215473,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 7,
+      "title": "核心服務解決方案",
+      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-215470,r11.php?Lang=zh-tw"
+    },
+    {
+      "id": 8,
+      "title": "聯盟簡介",
+      "link": "https://htpm.web2.ncku.edu.tw/p/404-1217-215469.php?Lang=zh-tw"
+    }
+  ]
 }
