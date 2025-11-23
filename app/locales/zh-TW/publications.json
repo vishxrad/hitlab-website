@@ -15,5 +15,13 @@
   "papers": "篇論文",
   "noPapersFound": "未找到論文",
   "adjustSearch": "請嘗試調整您的搜尋詞。",
-  "published": "已發表"
+  "published": "已發表",
+  "categories": {
+    "protein-stats": "蛋白質晶片統計分析",
+    "ecoli": "大腸桿菌蛋白體微陣列晶片",
+    "yeast": "酵母菌蛋白體微陣列晶片",
+    "human": "人類蛋白體微陣列晶片",
+    "antibody": "抗體微陣列晶片",
+    "others": "其他"
+  }
 }

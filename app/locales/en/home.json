@@ -4,6 +4,31 @@
     "subtitle": "Precision Profiling, Driving Biotech Innovation"
   },
   "ourTechnology": "Our Technology",
+  "applications": {
+    "title": "Applications of Microarrays",
+    "items": {
+      "proteinStats": {
+        "title": "Protein Chip Statistical Analysis",
+        "desc": "Comprehensive tools for analyzing high-throughput protein chip data."
+      },
+      "ecoli": {
+        "title": "E. coli Proteome Microarray",
+        "desc": "Screening intracellular protein targets and antibody signatures."
+      },
+      "yeast": {
+        "title": "Yeast Proteome Microarray",
+        "desc": "Systematic screening for protein-lipid and protein-drug interactions."
+      },
+      "human": {
+        "title": "Human Proteome Microarray",
+        "desc": "Autoantibody profiling and biomarker discovery for diseases."
+      },
+      "antibody": {
+        "title": "Antibody Microarray",
+        "desc": "Multiplexed immunoassays for rapid detection and profiling."
+      }
+    }
+  },
   "comparison": {
     "title": "High-Throughput Protein Microarray vs. ELISA",
     "proteinMicroarray": {

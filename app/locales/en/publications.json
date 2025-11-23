@@ -15,5 +15,13 @@
   "papers": "Papers",
   "noPapersFound": "No papers found",
   "adjustSearch": "Try adjusting your search terms.",
-  "published": "Published"
+  "published": "Published",
+  "categories": {
+    "protein-stats": "Protein chip statistical analysis",
+    "ecoli": "Escherichia coli proteome microarray chip",
+    "yeast": "Yeast proteome microarray chip",
+    "human": "Human proteome microarray chip",
+    "antibody": "Antibody microarray chip",
+    "others": "Others"
+  }
 }

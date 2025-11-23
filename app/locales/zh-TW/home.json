@@ -4,6 +4,31 @@
     "subtitle": "精準剖析，推動生物科技創新"
   },
   "ourTechnology": "我們的技術",
+  "applications": {
+    "title": "微陣列晶片應用",
+    "items": {
+      "proteinStats": {
+        "title": "蛋白質晶片統計分析",
+        "desc": "用於分析高通量蛋白質晶片數據的綜合工具。"
+      },
+      "ecoli": {
+        "title": "大腸桿菌蛋白體微陣列",
+        "desc": "篩選細胞內蛋白質標靶和抗體特徵。"
+      },
+      "yeast": {
+        "title": "酵母菌蛋白體微陣列",
+        "desc": "系統性篩選蛋白質-脂質和蛋白質-藥物相互作用。"
+      },
+      "human": {
+        "title": "人類蛋白體微陣列",
+        "desc": "自體抗體分析和疾病生物標誌物發現。"
+      },
+      "antibody": {
+        "title": "抗體微陣列",
+        "desc": "用於快速檢測和分析的多重免疫測定。"
+      }
+    }
+  },
   "comparison": {
     "title": "高通量蛋白質微陣列 vs. ELISA",
     "proteinMicroarray": {
