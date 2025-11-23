@@ -10,6 +10,7 @@ import {
   Fingerprint, 
   Layers 
 } from 'lucide-react';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-blue-50/50 rounded-full blur-3xl -z-10"></div>
         
-        <div className="max-w-7xl mx-auto px-6 pt-20 pb-24 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 pt-20 pb-12 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
             {/* Left Column: Content */}
@@ -65,6 +66,47 @@ export default function Home() {
       </section>
 
       <main className="max-w-7xl mx-auto px-6 pb-24">
+        
+        {/* Join Us / CTA Section */}
+        <div className="mt-8 mb-16 relative overflow-hidden rounded-3xl bg-blue-900 px-6 py-12 shadow-2xl sm:px-16 lg:px-24">
+          <svg
+            viewBox="0 0 1024 1024"
+            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+            aria-hidden="true"
+          >
+            <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+            <defs>
+              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                <stop stopColor="#7775D6" />
+                <stop offset={1} stopColor="#3556e9ff" />
+              </radialGradient>
+            </defs>
+          </svg>
+          <div className="relative z-10 mx-auto max-w-7xl lg:mx-0 lg:flex lg:w-full lg:items-center lg:justify-between">
+            <div className="max-w-2xl text-center lg:text-left">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                {t('cta.title')}
+                <br />
+                {t('cta.subtitle')}
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-blue-100">
+                {t('cta.description')}
+              </p>
+            </div>
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 lg:mt-0 lg:justify-end">
+              <Link
+                href="/contact"
+                className="rounded-full bg-white px-8 py-3 text-base font-semibold text-blue-900 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all"
+              >
+                {t('cta.getInTouch')}
+              </Link>
+              <Link href="/about" className="text-base font-semibold leading-6 text-white hover:text-blue-100 transition-colors">
+                {t('cta.learnMore')} <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* Applications Section */}
         <div className="mt-24 mb-24">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">{t('applications.title')}</h2>

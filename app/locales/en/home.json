@@ -48,5 +48,12 @@
       ]
     }
   },
-  "learnMore": "Learn More"
+  "learnMore": "Learn More",
+  "cta": {
+    "title": "Ready to accelerate your research?",
+    "subtitle": "Join us today.",
+    "description": "Whether you're a doctor researching biomarkers or a biotech company using proteome arrays for drug discovery, our high-throughput protein microarrays can transform your process.",
+    "getInTouch": "Get in touch",
+    "learnMore": "Learn more"
+  }
 }
