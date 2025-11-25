@@ -19,11 +19,14 @@
     }
   },
   "form": {
+    "title": "發送訊息給我們",
     "name": "姓名",
     "email": "電子郵件",
     "subject": "主旨",
     "message": "訊息",
-    "submit": "發送訊息"
+    "submit": "發送訊息",
+    "submitting": "發送中...",
+    "success": "謝謝！您的訊息已發送。"
   },
   "map": {
     "title": "我們的位置"

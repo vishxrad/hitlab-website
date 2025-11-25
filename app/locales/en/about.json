@@ -1,4 +1,148 @@
 {
+  "hero": {
+    "title": "Bridging Academia & Industry",
+    "subtitle": "The <highlight>High-Throughput Protein Microarray Technology Alliance</highlight> is dedicated to accelerating precision medicine. We combine academic research with industrial application to build a platform for antibody screening, disease diagnosis, and biomarker development."
+  },
+  "video": {
+    "caption": "Watch our introduction to see the facility in action."
+  },
+  "objectives": {
+    "title": "Our Core Objectives",
+    "subtitle": "How we drive value for our partners",
+    "cards": {
+      "production": {
+        "title": "Production & Purification",
+        "description": "Providing high-throughput protein production and microarray technologies to support clinical research."
+      },
+      "biomarker": {
+        "title": "Biomarker Library",
+        "description": "Constructing a blood antibody biomarker library to promote precision diagnostics."
+      },
+      "custom": {
+        "title": "Customized Services",
+        "description": "Tailored microarray chip services to enhance R&D efficiency and product value."
+      },
+      "industry": {
+        "title": "Industry Collaboration",
+        "description": "Partnering with enterprises to develop novel microarray technologies and applications."
+      }
+    }
+  },
+  "advantage": {
+    "title": "The Alliance Advantage",
+    "subtitle": "Why leading institutions partner with NCKU",
+    "cards": {
+      "fit": {
+        "title": "Tech & Industry Fit",
+        "description": "High-sensitivity technology specifically calibrated for drug discovery and clinical diagnostics."
+      },
+      "market": {
+        "title": "Market Demand",
+        "description": "Addressing the critical need for high-efficiency screening in cancer and immune disease research."
+      },
+      "policy": {
+        "title": "Policy Alignment",
+        "description": "Aligned with national precision medicine policies to drive Taiwan's biotech competitiveness."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "address": {
+      "title": "Laboratory Address",
+      "value": "9th Floor, Biomedical Excellence Building\nNo. 1, University Rd., East District\nTainan City 701, Taiwan"
+    },
+    "phone": {
+      "title": "Phone",
+      "value": "06-2353535 (Ext. 1535)"
+    },
+    "email": {
+      "title": "Email",
+      "value": "11402047@gs.ncku.edu.tw"
+    }
+  },
+  "team": {
+    "title": "Core Team Members",
+    "members": [
+      {
+        "name": "Wan-Chi Cheng",
+        "role": "R&D Personnel",
+        "education": "Master’s Degree in Food Safety and Risk Management, NCKU",
+        "email": "11402047@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/337523503.png"
+      },
+      {
+        "name": "Jia-Yi Yang",
+        "role": "PhD Student",
+        "education": "Institute of Basic Medical Sciences, NCKU",
+        "email": "S58131102@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/356872209.png"
+      },
+      {
+        "name": "Catherine Dominique",
+        "role": "Master’s Student",
+        "education": "Department of Food Safety and Risk Management, NCKU",
+        "email": "SC6135017@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/195247800.png"
+      },
+      {
+        "name": "Chen Hao Hsu",
+        "role": "Master’s Student",
+        "education": "Department of Food Safety and Risk Management, NCKU",
+        "email": "SC6134045@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/763461667.png"
+      },
+      {
+        "name": "Ying-Syuan Wu",
+        "role": "Master’s Student",
+        "education": "Department of Food Safety and Risk Management, NCKU",
+        "email": "SC6131089@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/862470444.png"
+      },
+      {
+        "name": "Hoang Son",
+        "role": "Master’s Student",
+        "education": "Department of Food Safety and Risk Management, NCKU",
+        "email": "SC6147022@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/336930744.png"
+      },
+      {
+        "name": "Jung, Pao",
+        "role": "Master’s Student",
+        "education": "Department of Food Safety and Risk Management, NCKU",
+        "email": "SC6147022@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/738493391.png"
+      },
+      {
+        "name": "Tzu-Chi Liu",
+        "role": "Master’s Student",
+        "education": "Department of Food Safety and Risk Management, NCKU",
+        "email": "SC6147022@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/682557727.png"
+      },
+      {
+        "name": "Yuan-Jie, Wu",
+        "role": "Master’s Student",
+        "education": "Department of Food Safety and Risk Management, NCKU",
+        "email": "SC6141036@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/869253954.png"
+      },
+      {
+        "name": "Nguyen Tran Quoc Toan",
+        "role": "Master’s Student",
+        "education": "Department of Food Safety and Risk Management, NCKU",
+        "email": "SC6147030@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/326416519.png"
+      },
+      {
+        "name": "Wen-Ting Fang",
+        "role": "B&D Assistant",
+        "education": "Bachelor’s Degree, Cross College Elite Program, NCKU",
+        "email": "I34096111@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/545009063.png"
+      }
+    ]
+  },
   "title": "About Proteome Array Alliance",
   "description1": "The \"High-Throughput Protein Microarray Technology and Biomedical Industry Service Alliance\" is dedicated to promoting the application of high-throughput protein microarray technology in the biomedical field. It establishes a platform for industry-academia collaboration to accelerate advances in precision medicine, antibody screening, disease diagnosis, and biomarker development.",
   "description2": "By combining academic research with industrial technological applications, we provide cutting-edge technologies and services to foster biotechnology industry growth and enhance the value of research and clinical applications.",

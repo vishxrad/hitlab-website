@@ -1,9 +1,23 @@
 'use client';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { MapPin, Mail, Clock, Send } from 'lucide-react';
+import { MapPin, Mail, Clock, Send, CheckCircle2 } from 'lucide-react';
 
 export default function ContactPage() {
   const { t } = useTranslation();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    // Simulate API call
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+    }, 1500);
+  };
 
   return (
     <main className="min-h-screen bg-slate-50 py-16 px-4 sm:px-6 lg:px-8">
@@ -81,60 +95,85 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">{t('contact.form.submit')}</h2>
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
-                  {t('contact.form.name')}
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                />
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">{t('contact.form.title')}</h2>
+            
+            {isSubmitted ? (
+              <div className="flex flex-col items-center justify-center h-64 text-center space-y-4 animate-in fade-in duration-500">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                  <CheckCircle2 className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900">{t('contact.form.success')}</h3>
+                <button 
+                  onClick={() => setIsSubmitted(false)}
+                  className="text-blue-600 hover:text-blue-700 font-medium"
+                >
+                  Send another message
+                </button>
               </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
-                  {t('contact.form.email')}
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                />
-              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
+                    {t('contact.form.name')}
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
+                    {t('contact.form.email')}
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-1">
-                  {t('contact.form.subject')}
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                />
-              </div>
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-1">
+                    {t('contact.form.subject')}
+                  </label>
+                  <input
+                    type="text"
+                    id="subject"
+                    required
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
-                  {t('contact.form.message')}
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
-                ></textarea>
-              </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
+                    {t('contact.form.message')}
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={4}
+                    required
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
+                  ></textarea>
+                </div>
 
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
-              >
-                <Send className="w-5 h-5" />
-                {t('contact.form.submit')}
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? (
+                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  ) : (
+                    <Send className="w-5 h-5" />
+                  )}
+                  {isSubmitting ? t('contact.form.submitting') : t('contact.form.submit')}
+                </button>
+              </form>
+            )}
           </div>
 
         </div>

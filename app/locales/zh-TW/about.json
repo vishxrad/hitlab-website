@@ -1,4 +1,148 @@
 {
+  "hero": {
+    "title": "連結學術與產業",
+    "subtitle": "<highlight>高通量蛋白質微陣列技術聯盟</highlight>致力於加速精準醫療。我們結合學術研究與產業應用，建立抗體篩選、疾病診斷與生物標誌物開發的平台。"
+  },
+  "video": {
+    "caption": "觀看我們的介紹影片，了解設施運作。"
+  },
+  "objectives": {
+    "title": "我們的核心目標",
+    "subtitle": "我們如何為合作夥伴創造價值",
+    "cards": {
+      "production": {
+        "title": "生產與純化",
+        "description": "提供高通量蛋白質生產與微陣列技術，支援臨床研究。"
+      },
+      "biomarker": {
+        "title": "生物標誌物資料庫",
+        "description": "建構血液抗體生物標誌物資料庫，推動精準診斷。"
+      },
+      "custom": {
+        "title": "客製化服務",
+        "description": "量身打造的微陣列晶片服務，提升研發效率與產品價值。"
+      },
+      "industry": {
+        "title": "產學合作",
+        "description": "與企業合作開發新型微陣列技術與應用。"
+      }
+    }
+  },
+  "advantage": {
+    "title": "聯盟優勢",
+    "subtitle": "為何頂尖機構選擇與成大合作",
+    "cards": {
+      "fit": {
+        "title": "技術與產業契合",
+        "description": "專為藥物發現與臨床診斷校準的高靈敏度技術。"
+      },
+      "market": {
+        "title": "市場需求",
+        "description": "解決癌症與免疫疾病研究中對高效率篩選的關鍵需求。"
+      },
+      "policy": {
+        "title": "政策一致性",
+        "description": "配合國家精準醫療政策，提升台灣生技競爭力。"
+      }
+    }
+  },
+  "contact": {
+    "title": "聯絡我們",
+    "address": {
+      "title": "實驗室地址",
+      "value": "台南市東區大學路1號\n生醫卓群大樓 9 樓"
+    },
+    "phone": {
+      "title": "電話",
+      "value": "06-2353535 (分機 1535)"
+    },
+    "email": {
+      "title": "電子郵件",
+      "value": "11402047@gs.ncku.edu.tw"
+    }
+  },
+  "team": {
+    "title": "核心成員介紹",
+    "members": [
+      {
+        "name": "鄭婉綺 (Wan-Chi Cheng)",
+        "role": "研發人員",
+        "education": "國立成功大學 食品安全衛生暨風險管理研究所 碩士",
+        "email": "11402047@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/337523503.png"
+      },
+      {
+        "name": "楊佳頤 (Jia-Yi Yang)",
+        "role": "博士生",
+        "education": "國立成功大學 基礎醫學研究所",
+        "email": "S58131102@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/356872209.png"
+      },
+      {
+        "name": "陳婉紫 (Catherine Dominique)",
+        "role": "碩士生",
+        "education": "國立成功大學 食品安全衛生暨風險管理研究所",
+        "email": "SC6135017@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/195247800.png"
+      },
+      {
+        "name": "許宸皓 (Chen Hao Hsu)",
+        "role": "碩士生",
+        "education": "國立成功大學 食品安全衛生暨風險管理研究所",
+        "email": "SC6134045@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/763461667.png"
+      },
+      {
+        "name": "吳盈萱 (Ying-Syuan Wu)",
+        "role": "碩士生",
+        "education": "國立成功大學 食品安全衛生暨風險管理研究所",
+        "email": "SC6131089@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/862470444.png"
+      },
+      {
+        "name": "凰山 (Hoang Son)",
+        "role": "碩士生",
+        "education": "國立成功大學 食品安全衛生暨風險管理研究所",
+        "email": "SC6147022@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/336930744.png"
+      },
+      {
+        "name": "包容 (Jung, Pao)",
+        "role": "碩士生",
+        "education": "國立成功大學 食品安全衛生暨風險管理研究所",
+        "email": "SC6147022@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/738493391.png"
+      },
+      {
+        "name": "劉子琪 (Tzu-Chi Liu)",
+        "role": "碩士生",
+        "education": "國立成功大學 食品安全衛生暨風險管理研究所",
+        "email": "SC6147022@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/682557727.png"
+      },
+      {
+        "name": "吳元傑 (Yuan-Jie, Wu)",
+        "role": "碩士生",
+        "education": "國立成功大學 食品安全衛生暨風險管理研究所",
+        "email": "SC6141036@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/869253954.png"
+      },
+      {
+        "name": "阮陳國全 (Nguyen Tran Quoc Toan)",
+        "role": "碩士生",
+        "education": "國立成功大學 食品安全衛生暨風險管理研究所",
+        "email": "SC6147030@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/326416519.png"
+      },
+      {
+        "name": "方文廷 (Wen-Ting Fang)",
+        "role": "B&D 助理",
+        "education": "國立成功大學 全校不分系學士學位學程 學士",
+        "email": "I34096111@gs.ncku.edu.tw",
+        "image": "https://htpm.web2.ncku.edu.tw/var/file/217/1217/img/545009063.png"
+      }
+    ]
+  },
   "title": "關於 HitLab",
   "description1": "HitLab 是一個由科學家、工程師和臨床醫生組成的多學科團隊，專注於高通量蛋白質微陣列技術。我們在藥物開發和精準醫療領域，架起了基礎蛋白質組學研究與現實世界臨床應用之間的橋樑。",
   "description2": "我們的工作涵蓋檢測開發、生物標誌物發現，以及與學術醫學中心和行業合作夥伴的轉化合作。我們結合穩健的濕實驗室流程與現代數據分析和視覺化，幫助研究人員從復雜的全蛋白質組數據中做出自信的決策。",

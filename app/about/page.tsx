@@ -1,169 +1,343 @@
 'use client';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import { Target, Users, Search, Database, Mail, MapPin, Phone, Play } from 'lucide-react';
 
 export default function AboutPage() {
   const { t } = useTranslation();
 
   return (
-    <main className="max-w-5xl mx-auto px-6 py-16">
-      <section className="space-y-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900">{t('about.title')}</h1>
-        <p className="text-gray-700 leading-relaxed">
-          {t('about.description1')}
-        </p>
-        <p className="text-gray-700 leading-relaxed">
-          {t('about.description2')}
-        </p>
-      </section>
-
-      <hr className="my-12 border-gray-200" />
-
-      {/* Leadership Section with Timeline */}
-      <section className="space-y-8">
-        <h2 className="text-2xl font-bold text-gray-900">{t('about.leadership.title')}</h2>
-        
-        <div className="grid md:grid-cols-12 gap-8">
-          {/* Profile Card */}
-          <div className="md:col-span-4 lg:col-span-3">
-            <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm sticky top-24">
-              <div className="h-32 w-32 bg-gray-200 rounded-full mb-6 flex items-center justify-center text-gray-400 overflow-hidden mx-auto">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="https://media.licdn.com/dms/image/v2/C4E03AQHkF4JUFnSw3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516646447791?e=1765411200&v=beta&t=MsLJJLr6diIQA-zMXZrZWx5PV240tmO-pylC2e9yxLc"
-                  alt="Dr. Chien-Sheng (Jason) Chen"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-900">Dr. Chien-Sheng (Jason) Chen</h3>
-                <p className="text-sm text-blue-600 font-medium mt-1">{t('about.leadership.role')}</p>
-                <p className="text-xs text-gray-500 mt-1">{t('about.leadership.title2')}</p>
-              </div>
-              <div className="mt-6 space-y-3 text-sm text-gray-600">
-                <p>
-                  {t('about.leadership.bio')}
-                </p>
-                <p className="italic text-xs text-gray-400 border-t pt-3">
-                  &quot;{t('about.leadership.quote')}&quot;
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Timeline / History Chart */}
-          <div className="md:col-span-8 lg:col-span-9">
-            <div className="relative border-l-2 border-blue-100 ml-3 md:ml-6 space-y-10 pb-4">
-              
-              {/* Current Roles */}
-              <div className="relative pl-8 md:pl-12">
-                <div className="absolute -left-[9px] top-1 h-5 w-5 rounded-full border-4 border-white bg-blue-600 shadow-sm"></div>
-                <h4 className="text-lg font-bold text-gray-900">{t('about.timeline.current')}</h4>
-                <ul className="mt-2 space-y-2 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="mr-2 mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-blue-400"></span>
-                    <span><strong className="font-medium">{t('about.timeline.professor')}</strong>, {t('about.timeline.dept')}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-2 mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-blue-400"></span>
-                    <span><strong className="font-medium">{t('about.timeline.president')}</strong>, {t('about.timeline.society')}</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Awards */}
-              <div className="relative pl-8 md:pl-12">
-                <div className="absolute -left-[9px] top-1 h-5 w-5 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-indigo-500">{t('about.timeline.awards')}</span>
-                <h4 className="text-lg font-bold text-gray-900 mt-1">{t('about.timeline.recognition')}</h4>
-                <ul className="mt-2 space-y-2 text-gray-700">
-                  <li><span className="font-medium">2018, 2021, 2022:</span> National Innovation Award, Taiwan</li>
-                  <li><span className="font-medium">2013:</span> Academia Sinica Research Award for Junior Research Investigators</li>
-                </ul>
-              </div>
-
-              {/* NCU Era */}
-              <div className="relative pl-8 md:pl-12">
-                <div className="absolute -left-[9px] top-1 h-5 w-5 rounded-full border-4 border-white bg-gray-300"></div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">2008 &ndash; 2017</span>
-                <h4 className="text-lg font-bold text-gray-900 mt-1">{t('about.timeline.ncu')}</h4>
-                <ul className="mt-2 space-y-1 text-gray-700 list-disc list-inside text-sm">
-                  {(t('about.timeline.ncuRoles', { returnObjects: true }) as string[]).map((role, index) => (
-                    <li key={index}>{role}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Postdoc */}
-              <div className="relative pl-8 md:pl-12">
-                <div className="absolute -left-[9px] top-1 h-5 w-5 rounded-full border-4 border-white bg-gray-300"></div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">2005 &ndash; 2007</span>
-                <h4 className="text-lg font-bold text-gray-900 mt-1">{t('about.timeline.jhu')}</h4>
-                <p className="text-gray-700 mt-1">
-                  {t('about.timeline.postdoc')}
-                </p>
-              </div>
-
-              {/* Education */}
-              <div className="relative pl-8 md:pl-12">
-                <div className="absolute -left-[9px] top-1 h-5 w-5 rounded-full border-4 border-white bg-gray-300"></div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">{t('about.timeline.education')}</span>
-                <h4 className="text-lg font-bold text-gray-900 mt-1">{t('about.timeline.academicBackground')}</h4>
-                <ul className="mt-2 space-y-2 text-gray-700">
-                  <li>
-                    <span className="font-medium">{t('about.timeline.phd')}</span> (2001&ndash;2005), Food Science and Technology, <span className="font-medium">{t('about.timeline.cornell')}</span>
-                  </li>
-                  <li>
-                    <span className="font-medium">{t('about.timeline.ms')}</span> (1996&ndash;1998), Food Science and Technology, <span className="font-medium">{t('about.timeline.ntu')}</span>
-                  </li>
-                  <li>
-                    <span className="font-medium">{t('about.timeline.bs')}</span> (1992&ndash;1996), Marine Food Science, <span className="font-medium">{t('about.timeline.ntou')}</span>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr className="my-12 border-gray-200" />
-
-      <section className="grid gap-12 md:grid-cols-2">
-        {/* Bioinformatics Team */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">{t('about.bioinformatics.title')}</h2>
-          <div className="bg-gray-50 p-6 rounded-lg border border-gray-100 h-full">
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('about.bioinformatics.subtitle')}</h3>
-            <p className="text-gray-700 text-sm mb-4">
-              {t('about.bioinformatics.description')}
+    <div className="bg-white">
+      
+      {/* 1. HERO: Alliance Introduction */}
+      <section className="relative py-20 bg-blue-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+              {t('about.hero.title')}
+            </h1>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              <Trans
+                t={t}
+                i18nKey="about.hero.subtitle"
+                components={{
+                  highlight: <span className="text-blue-700 font-semibold" />,
+                }}
+              />
             </p>
-            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-              {(t('about.bioinformatics.points', { returnObjects: true }) as string[]).map((point, index) => (
-                <li key={index}>{point}</li>
-              ))}
-            </ul>
           </div>
         </div>
       </section>
 
-      <section className="mt-12 space-y-6">
-        {/* Lab Photos - Medium Importance */}
-        <h2 className="text-2xl font-bold text-gray-900">{t('about.facilities.title')}</h2>
-        <p className="text-gray-700 max-w-3xl">
-          {t('about.facilities.description')}
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-gray-200">
-            {t('about.facilities.printer')}
+      {/* 2. VIDEO SECTION */}
+      <section className="py-12 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-black aspect-video group">
+            <video 
+              className="w-full h-full object-cover" 
+              controls 
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/api/placeholder/1280/720" 
+            >
+              <source src="https://mytube.ncku.edu.tw/filedl.php/video/30805/video_HD.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-gray-200">
-            {t('about.facilities.scanner')}
+          <p className="text-center text-sm text-gray-400 mt-4">
+            {t('about.video.caption')}
+          </p>
+        </div>
+      </section>
+
+      {/* 3. OBJECTIVES GRID */}
+      <section className="py-20 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900">{t('about.objectives.title')}</h2>
+            <p className="mt-4 text-gray-500">{t('about.objectives.subtitle')}</p>
           </div>
-          <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-gray-200">
-            {t('about.facilities.bench')}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Card 1 */}
+            <div className="flex items-start p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="bg-blue-100 p-3 rounded-lg text-blue-700 mr-4">
+                <Database className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{t('about.objectives.cards.production.title')}</h3>
+                <p className="text-gray-600">{t('about.objectives.cards.production.description')}</p>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="flex items-start p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="bg-blue-100 p-3 rounded-lg text-blue-700 mr-4">
+                <Target className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{t('about.objectives.cards.biomarker.title')}</h3>
+                <p className="text-gray-600">{t('about.objectives.cards.biomarker.description')}</p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="flex items-start p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="bg-blue-100 p-3 rounded-lg text-blue-700 mr-4">
+                <Search className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{t('about.objectives.cards.custom.title')}</h3>
+                <p className="text-gray-600">{t('about.objectives.cards.custom.description')}</p>
+              </div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="flex items-start p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="bg-blue-100 p-3 rounded-lg text-blue-700 mr-4">
+                <Users className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{t('about.objectives.cards.industry.title')}</h3>
+                <p className="text-gray-600">{t('about.objectives.cards.industry.description')}</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-    </main>
+
+      {/* 4. STRATEGIC ADVANTAGE */}
+      <section className="py-20 bg-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900">{t('about.advantage.title')}</h2>
+            <p className="mt-4 text-gray-600">{t('about.advantage.subtitle')}</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="p-8 bg-white rounded-2xl shadow-sm border border-gray-100">
+              <h3 className="text-xl font-bold text-blue-700 mb-4">{t('about.advantage.cards.fit.title')}</h3>
+              <p className="text-gray-600">
+                {t('about.advantage.cards.fit.description')}
+              </p>
+            </div>
+            <div className="p-8 bg-white rounded-2xl shadow-sm border border-gray-100">
+              <h3 className="text-xl font-bold text-blue-700 mb-4">{t('about.advantage.cards.market.title')}</h3>
+              <p className="text-gray-600">
+                {t('about.advantage.cards.market.description')}
+              </p>
+            </div>
+            <div className="p-8 bg-white rounded-2xl shadow-sm border border-gray-100">
+              <h3 className="text-xl font-bold text-blue-700 mb-4">{t('about.advantage.cards.policy.title')}</h3>
+              <p className="text-gray-600">
+                {t('about.advantage.cards.policy.description')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. LEADERSHIP (Existing) */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">{t('about.leadership.title')}</h2>
+          
+          <div className="grid md:grid-cols-12 gap-8">
+            {/* Profile Card */}
+            <div className="md:col-span-4 lg:col-span-3">
+              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm sticky top-24">
+                <div className="h-32 w-32 bg-gray-200 rounded-full mb-6 flex items-center justify-center text-gray-400 overflow-hidden mx-auto">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/C4E03AQHkF4JUFnSw3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516646447791?e=1765411200&v=beta&t=MsLJJLr6diIQA-zMXZrZWx5PV240tmO-pylC2e9yxLc"
+                    alt="Dr. Chien-Sheng (Jason) Chen"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="text-center">
+                  <h3 className="text-xl font-bold text-gray-900">Dr. Chien-Sheng (Jason) Chen</h3>
+                  <p className="text-sm text-blue-600 font-medium mt-1">{t('about.leadership.role')}</p>
+                  <p className="text-xs text-gray-500 mt-1">{t('about.leadership.title2')}</p>
+                </div>
+                <div className="mt-6 space-y-3 text-sm text-gray-600">
+                  <p>
+                    {t('about.leadership.bio')}
+                  </p>
+                  <p className="italic text-xs text-gray-400 border-t pt-3">
+                    &quot;{t('about.leadership.quote')}&quot;
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Timeline / History Chart */}
+            <div className="md:col-span-8 lg:col-span-9">
+              <div className="relative border-l-2 border-blue-100 ml-3 md:ml-6 space-y-10 pb-4">
+                
+                {/* Current Roles */}
+                <div className="relative pl-8 md:pl-12">
+                  <div className="absolute -left-[9px] top-1 h-5 w-5 rounded-full border-4 border-white bg-blue-600 shadow-sm"></div>
+                  <h4 className="text-lg font-bold text-gray-900">{t('about.timeline.current')}</h4>
+                  <ul className="mt-2 space-y-2 text-gray-700">
+                    <li className="flex items-start">
+                      <span className="mr-2 mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-blue-400"></span>
+                      <span><strong className="font-medium">{t('about.timeline.professor')}</strong>, {t('about.timeline.dept')}</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-blue-400"></span>
+                      <span><strong className="font-medium">{t('about.timeline.president')}</strong>, {t('about.timeline.society')}</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Awards */}
+                <div className="relative pl-8 md:pl-12">
+                  <div className="absolute -left-[9px] top-1 h-5 w-5 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-indigo-500">{t('about.timeline.awards')}</span>
+                  <h4 className="text-lg font-bold text-gray-900 mt-1">{t('about.timeline.recognition')}</h4>
+                  <ul className="mt-2 space-y-2 text-gray-700">
+                    <li><span className="font-medium">2018, 2021, 2022:</span> National Innovation Award, Taiwan</li>
+                    <li><span className="font-medium">2013:</span> Academia Sinica Research Award for Junior Research Investigators</li>
+                  </ul>
+                </div>
+
+                {/* NCU Era */}
+                <div className="relative pl-8 md:pl-12">
+                  <div className="absolute -left-[9px] top-1 h-5 w-5 rounded-full border-4 border-white bg-gray-300"></div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">2008 &ndash; 2017</span>
+                  <h4 className="text-lg font-bold text-gray-900 mt-1">{t('about.timeline.ncu')}</h4>
+                  <ul className="mt-2 space-y-1 text-gray-700 list-disc list-inside text-sm">
+                    {(t('about.timeline.ncuRoles', { returnObjects: true }) as string[]).map((role, index) => (
+                      <li key={index}>{role}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Postdoc */}
+                <div className="relative pl-8 md:pl-12">
+                  <div className="absolute -left-[9px] top-1 h-5 w-5 rounded-full border-4 border-white bg-gray-300"></div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">2005 &ndash; 2007</span>
+                  <h4 className="text-lg font-bold text-gray-900 mt-1">{t('about.timeline.jhu')}</h4>
+                  <p className="text-gray-700 mt-1">
+                    {t('about.timeline.postdoc')}
+                  </p>
+                </div>
+
+                {/* Education */}
+                <div className="relative pl-8 md:pl-12">
+                  <div className="absolute -left-[9px] top-1 h-5 w-5 rounded-full border-4 border-white bg-gray-300"></div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">{t('about.timeline.education')}</span>
+                  <h4 className="text-lg font-bold text-gray-900 mt-1">{t('about.timeline.academicBackground')}</h4>
+                  <ul className="mt-2 space-y-2 text-gray-700">
+                    <li>
+                      <span className="font-medium">{t('about.timeline.phd')}</span> (2001&ndash;2005), Food Science and Technology, <span className="font-medium">{t('about.timeline.cornell')}</span>
+                    </li>
+                    <li>
+                      <span className="font-medium">{t('about.timeline.ms')}</span> (1996&ndash;1998), Food Science and Technology, <span className="font-medium">{t('about.timeline.ntu')}</span>
+                    </li>
+                    <li>
+                      <span className="font-medium">{t('about.timeline.bs')}</span> (1992&ndash;1996), Marine Food Science, <span className="font-medium">{t('about.timeline.ntou')}</span>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. CORE TEAM MEMBERS */}
+      <section className="py-20 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900">{t('about.team.title')}</h2>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {(t('about.team.members', { returnObjects: true }) as any[]).map((member, index) => (
+              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col">
+                <div className="aspect-square bg-gray-100 relative overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover object-top"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
+                  <p className="text-blue-600 font-medium text-sm mb-3">{member.role}</p>
+                  <p className="text-gray-500 text-xs mb-4 flex-1">{member.education}</p>
+                  <a href={`mailto:${member.email}`} className="text-sm text-gray-400 hover:text-blue-600 transition-colors flex items-center mt-auto">
+                    <Mail className="w-4 h-4 mr-2" />
+                    {member.email}
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 7. CONTACT SECTION (New) */}
+      <section className="py-24 bg-white border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            {/* Contact Info */}
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">{t('about.contact.title')}</h2>
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <MapPin className="w-6 h-6 text-blue-700 mt-1 mr-4" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900">{t('about.contact.address.title')}</h3>
+                    <p className="text-gray-600 mt-1 whitespace-pre-line">
+                      {t('about.contact.address.value')}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <Phone className="w-6 h-6 text-blue-700 mt-1 mr-4" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900">{t('about.contact.phone.title')}</h3>
+                    <p className="text-gray-600 mt-1">{t('about.contact.phone.value')}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <Mail className="w-6 h-6 text-blue-700 mt-1 mr-4" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900">{t('about.contact.email.title')}</h3>
+                    <p className="text-gray-600 mt-1">{t('about.contact.email.value')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Visual / Map Placeholder */}
+            <div className="h-96 bg-gray-100 rounded-2xl overflow-hidden shadow-inner border border-gray-200 flex items-center justify-center relative">
+               <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8856!2d120.22147!3d23.00285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e77177cb52e8f%3A0x9c94e0ecbfe3835c!2sNational%20Cheng%20Kung%20University%20College%20of%20Medicine!5e0!3m2!1sen!2stw!4v1625000000000!5m2!1sen!2stw"
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0"
+              ></iframe>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
   );
 }

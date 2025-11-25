@@ -10,6 +10,7 @@ import enTechnology from './locales/en/technology.json';
 import enAbout from './locales/en/about.json';
 import enPublications from './locales/en/publications.json';
 import enBlog from './locales/en/blog.json';
+import enContact from './locales/en/contact.json';
 
 // Traditional Chinese resources
 import zhTWGlobal from './locales/zh-TW/global.json';
@@ -18,6 +19,7 @@ import zhTWTechnology from './locales/zh-TW/technology.json';
 import zhTWAbout from './locales/zh-TW/about.json';
 import zhTWPublications from './locales/zh-TW/publications.json';
 import zhTWBlog from './locales/zh-TW/blog.json';
+import zhTWContact from './locales/zh-TW/contact.json';
 
 const en = {
   ...enHome,
@@ -26,6 +28,7 @@ const en = {
   about: enAbout,
   publications: enPublications,
   blog: enBlog,
+  contact: enContact,
 };
 
 const zhTW = {
@@ -35,6 +38,7 @@ const zhTW = {
   about: zhTWAbout,
   publications: zhTWPublications,
   blog: zhTWBlog,
+  contact: zhTWContact,
 };
 
 i18n
