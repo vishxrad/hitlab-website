@@ -1,0 +1,31 @@
+{
+  "title": "Get in Touch",
+  "subtitle": "Interested in collaborating or learning more about our proteome microarray platform? We're here to help.",
+  "info": {
+    "address": {
+      "label": "Visit Us",
+      "building": "Biomedical Excellence Building",
+      "department": "College of Medicine, National Cheng Kung University",
+      "street": "No. 1, University Road, East District",
+      "city": "Tainan City 701, Taiwan"
+    },
+    "email": {
+      "label": "Email Us",
+      "value": "contact@hitlab.ncku.edu.tw"
+    },
+    "hours": {
+      "label": "Lab Hours",
+      "value": "Monday - Friday: 9:00 AM - 6:00 PM"
+    }
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send Message"
+  },
+  "map": {
+    "title": "Our Location"
+  }
+}

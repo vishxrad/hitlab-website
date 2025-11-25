@@ -1,0 +1,31 @@
+{
+  "title": "聯絡我們",
+  "subtitle": "有興趣合作或想了解更多關於我們的蛋白質微陣列平台嗎？我們隨時為您提供協助。",
+  "info": {
+    "address": {
+      "label": "拜訪我們",
+      "building": "生醫卓群大樓",
+      "department": "國立成功大學醫學院",
+      "street": "東區大學路1號",
+      "city": "台南市 701"
+    },
+    "email": {
+      "label": "電子郵件",
+      "value": "contact@hitlab.ncku.edu.tw"
+    },
+    "hours": {
+      "label": "實驗室開放時間",
+      "value": "週一至週五：上午 9:00 - 下午 6:00"
+    }
+  },
+  "form": {
+    "name": "姓名",
+    "email": "電子郵件",
+    "subject": "主旨",
+    "message": "訊息",
+    "submit": "發送訊息"
+  },
+  "map": {
+    "title": "我們的位置"
+  }
+}

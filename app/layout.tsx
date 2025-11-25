@@ -16,10 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col min-h-screen bg-white`}>
+      <body className={`${inter.className} flex flex-col min-h-screen bg-blue-50`}>
         <I18nextProviderWrapper>
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow pt-20">{children}</main>
           <FloatingContactButton />
           <Footer />
         </I18nextProviderWrapper>

@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "From <highlight>proteome-wide binding</highlight> maps to real-world decisions in <highlight>drug development</highlight> & <highlight>precision medicine</highlight>",
-    "subtitle": "Precision Profiling, Driving Biotech Innovation"
+    "subtitle": "The Proteome Array Alliance provides high-density protein microarrays and screening services for biomarker discovery."
   },
   "ourTechnology": "Our Technology",
   "applications": {
@@ -30,28 +30,49 @@
     }
   },
   "comparison": {
-    "title": "High-Throughput Protein Microarray vs. ELISA",
-    "proteinMicroarray": {
-      "title": "Protein Microarray",
-      "points": [
-        "High throughput, analyzing thousands of proteins at once.",
-        "Requires minimal sample volume.",
-        "Ideal for biomarker discovery and proteome-wide analysis."
-      ]
+    "newTitle": "Why use Proteome Microarrays instead of ELISA?",
+    "newSubtitle": "ELISA is a targeted, hypothesis-driven verification method, while <highlight>proteome microarrays are high-throughput discovery platforms</highlight> that allow unbiased screening of <highlight>thousands of proteins at once.</highlight>",
+    "tableHeader": {
+      "elisa": "Traditional ELISA",
+      "comparison": "Comparison",
+      "paa": "High-Throughput Proteome Microarrays"
     },
-    "elisa": {
-      "title": "ELISA",
-      "points": [
-        "Low throughput, analyzing one protein at a time.",
-        "Requires larger sample volumes.",
-        "Standard for quantifying specific, known proteins."
-      ]
-    }
+    "features": {
+      "throughput": {
+        "title": "Throughput",
+        "elisa": "Single target per well",
+        "elisaDesc": "Limited to checking one protein at a time.",
+        "paa": "21,000+ Targets",
+        "paaDesc": "Simultaneous screening of the whole proteome."
+      },
+      "sampleVolume": {
+        "title": "Sample Volume",
+        "elisa": "High volume required",
+        "elisaDesc": "Requires significant volume for broad screening.",
+        "paa": "Ultra-Low (< 10µL)",
+        "paaDesc": "Comprehensive data from a single drop of serum."
+      },
+      "researchGoal": {
+        "title": "Research Goal",
+        "elisa": "Verification",
+        "elisaDesc": "Confirms what you already suspect.",
+        "paa": "Discovery",
+        "paaDesc": "Identifies biomarkers you didn't know to look for."
+      },
+      "efficiency": {
+        "title": "Efficiency",
+        "elisa": "Labor Intensive",
+        "elisaDesc": "Slow, manual processes for multiple targets.",
+        "paa": "High-Speed",
+        "paaDesc": "Accelerated workflow for rapid insights."
+      }
+    },
+    "cta": "See the full specifications"
   },
   "learnMore": "Learn More",
   "cta": {
     "title": "Ready to accelerate your research?",
-    "subtitle": "Join us today.",
+    "subtitle": "Partner with us today.",
     "description": "Whether you're a doctor researching biomarkers or a biotech company using proteome arrays for drug discovery, our high-throughput protein microarrays can transform your process.",
     "getInTouch": "Get in touch",
     "learnMore": "Learn more"

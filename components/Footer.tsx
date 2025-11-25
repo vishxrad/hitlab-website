@@ -6,7 +6,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-gray-100 text-gray-800 py-12 mt-12">
+    <footer className="bg-blue-100 text-gray-800 py-12 mt-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* HQ Section */}

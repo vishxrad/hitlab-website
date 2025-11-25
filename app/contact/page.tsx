@@ -1,24 +1,144 @@
 'use client';
+import { useTranslation } from 'react-i18next';
+import { MapPin, Mail, Clock, Send } from 'lucide-react';
 
 export default function ContactPage() {
+  const { t } = useTranslation();
+
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
-      <section className="space-y-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900">Contact us</h1>
-        <p className="text-gray-700 leading-relaxed">
-          Interested in collaborating, running a pilot study, or learning more about our
-          high-throughput protein microarray platform? Send us a message and our team will
-          follow up with you.
-        </p>
-        <div className="mt-6 rounded-lg border border-gray-200 bg-white p-6 text-sm text-gray-700">
-          <p className="font-semibold text-gray-900">Email</p>
-          <p className="mt-1">example@hitlab.example.edu</p>
-          <p className="mt-4 font-semibold text-gray-900">Address</p>
-          <p className="mt-1">Department of Food Safety and Risk Management</p>
-          <p>College of Medicine, National Cheng Kung University</p>
-          <p>Tainan City 701401, Taiwan</p>
+    <main className="min-h-screen bg-slate-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-slate-900 mb-4">{t('contact.title')}</h1>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            {t('contact.subtitle')}
+          </p>
         </div>
-      </section>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          
+          {/* Contact Information */}
+          <div className="space-y-8">
+            {/* Info Cards */}
+            <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 space-y-8">
+              
+              {/* Address */}
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <MapPin className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900 mb-1">{t('contact.info.address.label')}</h3>
+                  <p className="text-slate-600">{t('contact.info.address.building')}</p>
+                  <p className="text-slate-600">{t('contact.info.address.department')}</p>
+                  <p className="text-slate-600">{t('contact.info.address.street')}</p>
+                  <p className="text-slate-600">{t('contact.info.address.city')}</p>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <Mail className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900 mb-1">{t('contact.info.email.label')}</h3>
+                  <a href={`mailto:${t('contact.info.email.value')}`} className="text-blue-600 hover:text-blue-700 font-medium">
+                    {t('contact.info.email.value')}
+                  </a>
+                </div>
+              </div>
+
+              {/* Hours */}
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <Clock className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900 mb-1">{t('contact.info.hours.label')}</h3>
+                  <p className="text-slate-600">{t('contact.info.hours.value')}</p>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Map Embed */}
+            <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden h-[400px] relative">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8856!2d120.22147!3d23.00285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e77177cb52e8f%3A0x9c94e0ecbfe3835c!2sNational%20Cheng%20Kung%20University%20College%20of%20Medicine!5e0!3m2!1sen!2stw!4v1625000000000!5m2!1sen!2stw"
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0"
+              ></iframe>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">{t('contact.form.submit')}</h2>
+            <form className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
+                  {t('contact.form.name')}
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
+                  {t('contact.form.email')}
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-1">
+                  {t('contact.form.subject')}
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
+                  {t('contact.form.message')}
+                </label>
+                <textarea
+                  id="message"
+                  rows={4}
+                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
+              >
+                <Send className="w-5 h-5" />
+                {t('contact.form.submit')}
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
     </main>
   );
 }

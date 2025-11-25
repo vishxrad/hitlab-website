@@ -50,9 +50,9 @@ const categories = [
     title: 'Escherichia coli proteome microarray chip',
     titleZh: '大腸桿菌蛋白體微陣列晶片',
     icon: <Dna className="w-5 h-5" />,
-    color: 'text-emerald-600',
-    bgColor: 'bg-emerald-50',
-    borderColor: 'border-emerald-200',
+    color: 'text-cyan-600',
+    bgColor: 'bg-cyan-50',
+    borderColor: 'border-cyan-200',
     papers: [
       { id: 'ec-1', title: 'Reverse-phase protein microarrays for monitoring antibody dynamics', authors: 'Keskin, B. B., et al.', year: '2024', link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11140677/' },
       { id: 'ec-2', title: 'Profiling antibody signature of schizophrenia patients using E. coli proteome microarrays', authors: 'Chen, B.-Y., et al.', year: '2022, Nov', link: 'https://www.sciencedirect.com/science/article/pii/S0889159122003361?via%3Dihub' },
@@ -77,9 +77,9 @@ const categories = [
     title: 'Yeast proteome microarray chip',
     titleZh: '酵母菌蛋白體微陣列晶片',
     icon: <Microscope className="w-5 h-5" />,
-    color: 'text-purple-600',
-    bgColor: 'bg-purple-50',
-    borderColor: 'border-purple-200',
+    color: 'text-indigo-600',
+    bgColor: 'bg-indigo-50',
+    borderColor: 'border-indigo-200',
     papers: [
       { id: 'ys-1', title: 'Active-site cysteine 215 sulfonation in yeast protein tyrosine phosphatase', authors: 'Yang, C. Y., et al.', year: '2023, Jan', link: 'https://www.sciencedirect.com/science/article/pii/S0891584922010231?via%3Dihub' },
       { id: 'ys-2', title: 'Systematic Screening of Yeast Proteins for Phosphatidylinositol Interactions', authors: 'Shah, Pramod; Chen, Chien-Sheng', year: '2022, Jan', link: 'https://www.sciencedirect.com/science/article/pii/S0891584922010231?via%3Dihub' },
@@ -94,9 +94,9 @@ const categories = [
     title: 'Human proteome microarray chip',
     titleZh: '人類蛋白體微陣列晶片',
     icon: <Fingerprint className="w-5 h-5" />,
-    color: 'text-rose-600',
-    bgColor: 'bg-rose-50',
-    borderColor: 'border-rose-200',
+    color: 'text-sky-600',
+    bgColor: 'bg-sky-50',
+    borderColor: 'border-sky-200',
     papers: [
       { id: 'hm-1', title: 'Autoantibody profiling of monoamine oxidase A knockout mice', authors: 'Syu, G. D., et al.', year: '2023 Jan', link: 'https://www.sciencedirect.com/science/article/pii/S0889159122004068?via%3Dihub' },
       { id: 'hm-2', title: 'Discovery and characterization of cross-reactive intrahepatic antibodies', authors: 'R. N., et al.', year: '2023', link: 'https://www.biorxiv.org/content/10.1101/2023.02.23.529702v1' },
@@ -111,9 +111,9 @@ const categories = [
     title: 'Antibody microarray chip',
     titleZh: '抗體微陣列晶片',
     icon: <Layers className="w-5 h-5" />,
-    color: 'text-amber-600',
-    bgColor: 'bg-amber-50',
-    borderColor: 'border-amber-200',
+    color: 'text-teal-600',
+    bgColor: 'bg-teal-50',
+    borderColor: 'border-teal-200',
     papers: [
       { id: 'ab-1', title: 'Development of a chip-based multiplexed immunoassay for rapid detection', authors: 'Su WH, et al.', year: '2013, Mar', link: 'https://www.sciencedirect.com/science/article/pii/S1028455913000065' },
       { id: 'ab-2', title: 'A fast universal immobilization of immunoglobulin G for antibody microarrays', authors: 'Guo SL, et al.', year: '2012, Dec', link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3517563/' },
@@ -151,7 +151,7 @@ const CategoryNav = ({ activeCategory, onSelectCategory }: any) => {
               className={`
                 flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-200 border
                 ${isActive 
-                  ? 'bg-cyan-600 text-white border-cyan-600 shadow-sm' 
+                  ? 'bg-blue-600 text-white border-blue-600 shadow-sm' 
                   : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50 hover:border-slate-300'
                 }
               `}
@@ -172,19 +172,19 @@ const PaperCard = ({ paper, category, onSelect }: any) => {
   return (
     <div 
       onClick={() => onSelect(paper)}
-      className="group bg-white rounded-lg border border-slate-200 p-5 hover:shadow-lg hover:border-cyan-300 transition-all duration-300 cursor-pointer flex flex-col h-full relative overflow-hidden"
+      className="group bg-white rounded-lg border border-slate-200 p-5 hover:shadow-lg hover:border-blue-300 transition-all duration-300 cursor-pointer flex flex-col h-full relative overflow-hidden"
     >
       {/* Top Accent */}
-      <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${category.id === 'ecoli' ? 'from-emerald-500 to-emerald-300' : 'from-blue-500 to-cyan-400'} opacity-0 group-hover:opacity-100 transition-opacity`} />
+      <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${category.id === 'ecoli' ? 'from-emerald-500 to-emerald-300' : 'from-blue-600 to-blue-400'} opacity-0 group-hover:opacity-100 transition-opacity`} />
 
       <div className="flex justify-between items-start mb-3">
         <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200">
           {paper.year}
         </span>
-        <ExternalLink className="w-4 h-4 text-slate-300 group-hover:text-cyan-600 transition-colors" />
+        <ExternalLink className="w-4 h-4 text-slate-300 group-hover:text-blue-600 transition-colors" />
       </div>
 
-      <h3 className="text-lg font-bold text-slate-800 mb-3 leading-snug group-hover:text-cyan-700 transition-colors">
+      <h3 className="text-lg font-bold text-slate-800 mb-3 leading-snug group-hover:text-blue-700 transition-colors">
         {paper.title}
       </h3>
 
@@ -249,11 +249,11 @@ const DetailModal = ({ paper, onClose, category }: any) => {
                    href={paper.link}
                    target="_blank"
                    rel="noopener noreferrer"
-                   className="flex flex-col items-center justify-center h-full p-4 bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 hover:border-cyan-300 rounded-lg transition-all group text-center"
+                   className="flex flex-col items-center justify-center h-full p-4 bg-blue-50 hover:bg-blue-100 border border-blue-200 hover:border-blue-300 rounded-lg transition-all group text-center"
                  >
-                    <ExternalLink className="w-8 h-8 text-cyan-600 mb-2 group-hover:scale-110 transition-transform" />
-                    <span className="text-cyan-900 font-bold">{t('publications.readFullPaper')}</span>
-                    <span className="text-xs text-cyan-600 mt-1">{t('publications.opensInNewTab')}</span>
+                    <ExternalLink className="w-8 h-8 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
+                    <span className="text-blue-900 font-bold">{t('publications.readFullPaper')}</span>
+                    <span className="text-xs text-blue-600 mt-1">{t('publications.opensInNewTab')}</span>
                  </a>
               </div>
            </div>
@@ -308,7 +308,7 @@ export default function PublicationsPage() {
                 <input
                   type="text"
                   placeholder={t('publications.searchPlaceholder')}
-                  className="block w-full pl-10 pr-3 py-2 border border-slate-200 rounded-lg leading-5 bg-slate-50 placeholder-slate-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent sm:text-sm transition-all shadow-sm"
+                  className="block w-full pl-10 pr-3 py-2 border border-slate-200 rounded-lg leading-5 bg-slate-50 placeholder-slate-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent sm:text-sm transition-all shadow-sm"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
@@ -331,7 +331,7 @@ export default function PublicationsPage() {
            
            {/* Stats / Breadcrumbs */}
            <div className="flex items-center gap-4 text-sm text-slate-500 mb-6">
-              <span className="flex items-center gap-1 hover:text-cyan-600 cursor-pointer">
+              <span className="flex items-center gap-1 hover:text-blue-600 cursor-pointer">
                 <Database className="w-3 h-3" /> {t('publications.repository')}
               </span>
               <ChevronRight className="w-3 h-3" />

@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "從<highlight>全蛋白質組結合圖譜</highlight>，賦能<highlight>藥物開發與精準醫療</highlight>的關鍵決策",
-    "subtitle": "精準剖析，推動生物科技創新"
+    "subtitle": "Proteome Array Alliance 提供用於生物標記發現的高密度蛋白質微陣列與篩選服務。"
   },
   "ourTechnology": "我們的技術",
   "applications": {
@@ -30,23 +30,44 @@
     }
   },
   "comparison": {
-    "title": "高通量蛋白質微陣列 vs. ELISA",
-    "proteinMicroarray": {
-      "title": "蛋白質微陣列",
-      "points": [
-        "高通量，一次分析數千種蛋白質。",
-        "僅需極少量樣本。",
-        "適用於生物標誌物發現和蛋白質組全方位分析。"
-      ]
+    "newTitle": "為什麼要使用蛋白質組微陣列而不是 ELISA？",
+    "newSubtitle": "ELISA 是一種靶向性強、假設驅動的驗證方法，而蛋白質組微陣列是一種高通量發現平台，可以一次對數千種蛋白質進行無偏篩選。",
+    "tableHeader": {
+      "elisa": "傳統 ELISA",
+      "comparison": "比較",
+      "paa": "High-Throughput Proteome Microarrays "
     },
-    "elisa": {
-      "title": "ELISA",
-      "points": [
-        "低通量，一次僅分析一種蛋白質。",
-        "需要較大的樣本量。",
-        "用於定量特定、已知蛋白質的標準方法。"
-      ]
-    }
+    "features": {
+      "throughput": {
+        "title": "通量",
+        "elisa": "每孔單一標靶",
+        "elisaDesc": "一次僅限檢測一種蛋白質。",
+        "paa": "21,000+ 標靶",
+        "paaDesc": "同時篩選整個蛋白質組。"
+      },
+      "sampleVolume": {
+        "title": "樣本體積",
+        "elisa": "需要大量樣本",
+        "elisaDesc": "廣泛篩選需要大量樣本。",
+        "paa": "極低 (< 10µL)",
+        "paaDesc": "僅需一滴血清即可獲得全面數據。"
+      },
+      "researchGoal": {
+        "title": "研究目標",
+        "elisa": "驗證",
+        "elisaDesc": "確認您已經懷疑的結果。",
+        "paa": "發現",
+        "paaDesc": "識別您未曾想過要尋找的生物標誌物。"
+      },
+      "efficiency": {
+        "title": "效率",
+        "elisa": "勞力密集",
+        "elisaDesc": "多重標靶的緩慢人工流程。",
+        "paa": "高速",
+        "paaDesc": "加速工作流程以快速獲得見解。"
+      }
+    },
+    "cta": "查看完整規格"
   },
   "learnMore": "了解更多",
   "cta": {

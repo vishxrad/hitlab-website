@@ -115,7 +115,7 @@ const ProteinArrayApp = () => {
         </div>
 
         {/* Right Side: Image Visualization */}
-        <div className="relative flex items-center justify-center h-[400px] w-full bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden animate-in fade-in zoom-in-95 duration-500" key={`${activeApp.id}-visual`}>
+        <div className="relative flex items-center justify-center h-[400px] w-full bg-blue-50 rounded-2xl border border-blue-100 overflow-hidden animate-in fade-in zoom-in-95 duration-500" key={`${activeApp.id}-visual`}>
            <img 
              src={activeApp.image} 
              alt={activeApp.title}

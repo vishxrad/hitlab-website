@@ -1,5 +1,6 @@
 'use client';
 import { useTranslation } from 'react-i18next';
+import ProteinArrayApp from '@/components/ProteinArrayApp';
 
 export default function TechnologyPage() {
   const { t } = useTranslation();
@@ -119,6 +120,12 @@ export default function TechnologyPage() {
             </ul>
           </div>
         </div>
+      </section>
+
+      {/* Applications Section */}
+      <section className="mt-16 mb-12">
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">{t('applications.title')}</h2>
+        <ProteinArrayApp />
       </section>
     </main>
   );
