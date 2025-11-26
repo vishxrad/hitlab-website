@@ -1,4 +1,12 @@
 {
+  "hero": {
+    "title": "Decoding the Immune System with High-Throughput Microarrays.",
+    "subtitle": "Antibodies are like fingerprints of past infections. Our platform allows you to see exactly which bacterial proteins a patient’s immune system reacts to with high specificity."
+  },
+  "surfaceChemistry": {
+    "title": "Advanced Surface Modification",
+    "description": "We utilize an optimized Aldehyde Silane Coating (APTES-GA) method. This ensures high protein immobilization efficiency and low background noise."
+  },
   "title": "Our Technology",
   "description": "We combine high-throughput protein microarray wafers with robust assay development and analysis pipelines to profile thousands of proteins in a single experiment.",
   "platforms": {

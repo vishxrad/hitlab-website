@@ -1,5 +1,13 @@
 {
   "title": "聯絡我們",
+  "description": "請填寫以下表格，我們將盡快與您聯繫。",
+  "success": "訊息已成功發送！",
+  "nameLabel": "姓名",
+  "emailLabel": "電子郵件",
+  "messageLabel": "訊息",
+  "cancel": "取消",
+  "submitting": "發送中...",
+  "submit": "發送訊息",
   "subtitle": "有興趣合作或想了解更多關於我們的蛋白質微陣列平台嗎？我們隨時為您提供協助。",
   "info": {
     "address": {
