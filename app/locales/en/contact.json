@@ -19,7 +19,7 @@
     },
     "email": {
       "label": "Email Us",
-      "value": "contact@hitlab.ncku.edu.tw"
+      "value": "11402047@gs.ncku.edu.tw"
     },
     "hours": {
       "label": "Lab Hours",
@@ -28,8 +28,22 @@
   },
   "form": {
     "title": "Send us a Message",
-    "name": "Name",
-    "email": "Email",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number (Optional)",
+    "institution": "Institution / Company Name",
+    "jobTitle": "Job Title (Optional)",
+    "inquiryType": {
+      "label": "Inquiry Type",
+      "options": {
+        "general": "General Inquiry",
+        "quote": "Service Quote / Pricing",
+        "support": "Technical Support",
+        "collaboration": "Academic Collaboration",
+        "student": "Student / Internship Application"
+      }
+    },
     "subject": "Subject",
     "message": "Message",
     "submit": "Send Message",

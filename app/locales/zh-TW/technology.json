@@ -82,5 +82,36 @@
     "peerReviewed": "同行評審出版物（範例）",
     "conference": "會議摘要與研討會（範例）",
     "caseStudies": "案例研究（佔位符）"
+  },
+  "applications": {
+    "interactions": {
+      "title": "多組學相互作用分析",
+      "description": "透過同時分析蛋白質-蛋白質、蛋白質-核酸 (DNA/RNA/miRNA) 和蛋白質-脂質相互作用，解碼複雜的生物網絡。",
+      "stats": ["PI(3,5)P2 脂質", "啟動子/miRNA 結合", "蛋白酶 ClpY 動力學"]
+    },
+    "immune": {
+      "title": "免疫反應解碼",
+      "description": "針對 SLE、IBD、川崎病和細菌感染等疾病，進行自體抗體和免疫標記的高通量分析。",
+      "stats": ["自體抗體篩選", "細菌檢測", "基因剔除小鼠分析"]
+    },
+    "smallMolecule": {
+      "title": "小分子與胜肽篩選",
+      "description": "研究抗生素、抗菌胜肽 (AMPs) 和氧化胜肽的結合特異性。",
+      "stats": ["抗生素相互作用", "AMP 結合", "氧化胜肽分析"]
+    },
+    "cellular": {
+      "title": "細胞識別",
+      "description": "分析蛋白質與特定細胞類型的相互作用，包括神經元、嗜中性球和上皮細胞。",
+      "stats": ["細胞表面標記", "神經元識別", "上皮細胞相互作用"]
+    },
+    "enzymatic": {
+      "title": "PTM 與酵素分析",
+      "description": "即時監測轉譯後修飾 (PTMs)，如硫酸化和激酶活性。",
+      "stats": ["硫酸化分析", "酵素轉換", "激酶分析"]
+    },
+    "modal": {
+      "keyPublications": "主要發表文獻",
+      "readPaper": "閱讀論文"
+    }
   }
 }

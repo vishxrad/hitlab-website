@@ -19,7 +19,7 @@
     },
     "email": {
       "label": "電子郵件",
-      "value": "contact@hitlab.ncku.edu.tw"
+      "value": "11402047@gs.ncku.edu.tw"
     },
     "hours": {
       "label": "實驗室開放時間",
@@ -28,8 +28,22 @@
   },
   "form": {
     "title": "發送訊息給我們",
-    "name": "姓名",
+    "firstName": "名字",
+    "lastName": "姓氏",
     "email": "電子郵件",
+    "phone": "電話號碼 (選填)",
+    "institution": "機構 / 公司名稱",
+    "jobTitle": "職稱 (選填)",
+    "inquiryType": {
+      "label": "詢問類型",
+      "options": {
+        "general": "一般詢問",
+        "quote": "服務報價 / 定價",
+        "support": "技術支援",
+        "collaboration": "學術合作",
+        "student": "學生 / 實習申請"
+      }
+    },
     "subject": "主旨",
     "message": "訊息",
     "submit": "發送訊息",

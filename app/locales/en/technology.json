@@ -82,5 +82,36 @@
     "peerReviewed": "Peer-reviewed publications (examples)",
     "conference": "Conference abstracts & workshops (examples)",
     "caseStudies": "Case studies (placeholders)"
+  },
+  "applications": {
+    "interactions": {
+      "title": "Multi-Omics Interaction Profiling",
+      "description": "Deciphering complex biological networks through simultaneous analysis of Protein-Protein, Protein-Nucleic Acid (DNA/RNA/miRNA), and Protein-Lipid interactions.",
+      "stats": ["PI(3,5)P2 Lipids", "Promoter/miRNA Binding", "Protease ClpY Kinetics"]
+    },
+    "immune": {
+      "title": "Immune Response Decoding",
+      "description": "High-throughput profiling of autoantibodies and immune markers for conditions like SLE, IBD, Kawasaki Disease, and bacterial infections.",
+      "stats": ["Autoantibody Screening", "Bacterial Detection", "Knock-out Mouse Profiling"]
+    },
+    "smallMolecule": {
+      "title": "Small Molecule & Peptide Screening",
+      "description": "Investigating binding specificity for antibiotics, antimicrobial peptides (AMPs), and oxidized peptides.",
+      "stats": ["Antibiotic Interactions", "AMP Binding", "Oxidized Peptide Analysis"]
+    },
+    "cellular": {
+      "title": "Cellular Recognition",
+      "description": "Analyzing protein interactions with specific cell types including neurons, neutrophils, and epithelial cells.",
+      "stats": ["Cell Surface Markers", "Neuron Recognition", "Epithelial Interactions"]
+    },
+    "enzymatic": {
+      "title": "PTM & Enzymatic Assays",
+      "description": "Monitoring post-translational modifications (PTMs) such as sulfation and kinase activities in real-time.",
+      "stats": ["Sulfation Assays", "Enzymatic Turnover", "Kinase Profiling"]
+    },
+    "modal": {
+      "keyPublications": "Key Publications",
+      "readPaper": "Read Paper"
+    }
   }
 }
