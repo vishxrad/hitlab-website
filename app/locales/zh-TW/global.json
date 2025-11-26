@@ -34,13 +34,12 @@
     "disclaimer": "我們的藥物僅用於其在當地國家或地區獲准的適應症。欲了解更多信息，請訪問我們的產品頁面。",
     "helpfulLinks": "常用連結",
     "links": {
-      "reportSideEffect": "報告副作用",
-      "patientHelp": "患者幫助",
-      "supplierHelp": "供應商幫助",
-      "productList": "產品列表",
-      "contactUs": "聯繫我們",
-      "codeOfConduct": "行為準則",
-      "esgReporting": "ESG 報告"
+      "home": "首頁",
+      "about": "團隊與使命",
+      "technology": "核心技術",
+      "publications": "精選著作",
+      "blog": "最新動態",
+      "contact": "合作洽詢"
     },
     "followUs": "關注我們",
     "social": {

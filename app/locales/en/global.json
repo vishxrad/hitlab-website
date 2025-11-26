@@ -34,13 +34,12 @@
     "disclaimer": "Our medicines are for the approved indication for which they are authorised in the local country or region. For more information, please visit our product page.",
     "helpfulLinks": "Helpful Links",
     "links": {
-      "reportSideEffect": "Report a side effect",
-      "patientHelp": "Patient help",
-      "supplierHelp": "Supplier help",
-      "productList": "Product list",
-      "contactUs": "Contact us",
-      "codeOfConduct": "Code of conduct",
-      "esgReporting": "ESG reporting"
+      "home": "Home",
+      "about": "Our Team & Mission",
+      "technology": "Core Technology",
+      "publications": "Selected Publications",
+      "blog": "Recent News",
+      "contact": "Partner with Us"
     },
     "followUs": "Follow Us",
     "social": {
