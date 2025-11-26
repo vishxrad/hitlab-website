@@ -7,6 +7,52 @@
     "title": "Advanced Surface Modification",
     "description": "We utilize an optimized Aldehyde Silane Coating (APTES-GA) method. This ensures high protein immobilization efficiency and low background noise."
   },
+  "workflow": {
+    "title": "The Chip Assay Process",
+    "steps": {
+      "immobilization": {
+        "title": "1. Immobilization",
+        "description": "~4,300 E. coli proteins are immobilized on aldehyde-silane coated chips."
+      },
+      "blocking": {
+        "title": "2. Blocking & Wash",
+        "description": "Chips are blocked with 3% BSA in PBS to prevent non-specific binding."
+      },
+      "incubation": {
+        "title": "3. Incubation",
+        "description": "Incubate with human plasma (1:4000) followed by fluorescent secondary antibodies."
+      },
+      "analysis": {
+        "title": "4. Scanning & Analysis",
+        "description": "Scan using LuxScan™ and analyze signal intensity with GenePix Pro."
+      }
+    },
+    "diagramLabel": "Full Process Diagram"
+  },
+  "results": {
+    "title": "High Density. High Sensitivity.",
+    "description": "Experience the power of high-throughput screening with exceptional signal-to-noise ratios."
+  },
+  "portfolio": {
+    "title": "Our Chip Portfolio",
+    "description": "Comprehensive proteome coverage for diverse research needs.",
+    "human": {
+      "title": "Human Proteome",
+      "count": "~21,000 Proteins",
+      "description": "High-density human protein coverage for autoantibody screening.",
+      "provider": "Provided by CDI Labs (USA)"
+    },
+    "yeast": {
+      "title": "Yeast Proteome",
+      "count": "~5,800 Proteins",
+      "description": "Model organism profiling for eukaryotic cell biology."
+    },
+    "ecoli": {
+      "title": "E. coli Proteome",
+      "count": "~4,300 Proteins",
+      "description": "Complete prokaryotic proteome for bacterial research."
+    }
+  },
   "title": "Our Technology",
   "description": "We combine high-throughput protein microarray wafers with robust assay development and analysis pipelines to profile thousands of proteins in a single experiment.",
   "platforms": {

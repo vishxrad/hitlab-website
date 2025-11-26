@@ -7,6 +7,52 @@
     "title": "先進表面修飾技術",
     "description": "我們採用優化的醛基矽烷塗層 (APTES-GA) 方法。這確保了高蛋白質固定效率和低背景雜訊。"
   },
+  "workflow": {
+    "title": "晶片檢測流程",
+    "steps": {
+      "immobilization": {
+        "title": "1. 固定",
+        "description": "約 4,300 種大腸桿菌蛋白質固定在醛基矽烷塗層晶片上。"
+      },
+      "blocking": {
+        "title": "2. 封閉與清洗",
+        "description": "使用 PBS 中的 3% BSA 封閉晶片以防止非特異性結合。"
+      },
+      "incubation": {
+        "title": "3. 孵育",
+        "description": "與人類血漿 (1:4000) 孵育，隨後加入螢光二級抗體。"
+      },
+      "analysis": {
+        "title": "4. 掃描與分析",
+        "description": "使用 LuxScan™ 掃描並透過 GenePix Pro 分析訊號強度。"
+      }
+    },
+    "diagramLabel": "完整流程圖"
+  },
+  "results": {
+    "title": "高密度。高靈敏度。",
+    "description": "體驗具有卓越信噪比的高通量篩選能力。"
+  },
+  "portfolio": {
+    "title": "我們的晶片產品組合",
+    "description": "滿足多樣化研究需求的全面蛋白質組覆蓋。",
+    "human": {
+      "title": "人類蛋白質組",
+      "count": "~21,000 種蛋白質",
+      "description": "用於自體抗體篩選的高密度人類蛋白質覆蓋。",
+      "provider": "由 CDI Labs (美國) 提供"
+    },
+    "yeast": {
+      "title": "酵母菌蛋白質組",
+      "count": "~5,800 種蛋白質",
+      "description": "用於真核細胞生物學的模式生物分析。"
+    },
+    "ecoli": {
+      "title": "大腸桿菌蛋白質組",
+      "count": "~4,300 種蛋白質",
+      "description": "用於細菌研究的完整原核蛋白質組。"
+    }
+  },
   "title": "我們的技術",
   "description": "我們結合高通量蛋白質微陣列晶片、穩健的檢測開發與分析流程，在單次實驗中分析數千種蛋白質。",
   "platforms": {
