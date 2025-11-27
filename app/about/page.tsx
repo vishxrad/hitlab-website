@@ -24,6 +24,17 @@ export default function AboutPage() {
                 }}
               />
             </p>
+
+            <div className="mt-8 flex items-center justify-center gap-3 opacity-70 hover:opacity-100 transition-opacity duration-300">
+              <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
+                {t('about.hero.affiliation')}
+              </span>
+              <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRFuy2m0WvUfqAwrsAukbF2_-9EDJ4xlApHA&s" 
+                alt="NCKU Logo" 
+                className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
           </div>
         </div>
       </section>

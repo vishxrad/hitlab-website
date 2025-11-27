@@ -15,7 +15,11 @@ const Footer = () => {
             <address className="not-italic text-sm space-y-2">
               <p>{t('footer.address.name')}</p>
               <p>{t('footer.address.department')}</p>
-              <p>{t('footer.address.university')}</p>
+              <p>
+                <a href="https://www.ncku.edu.tw/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-blue-600">
+                  {t('footer.address.university')}
+                </a>
+              </p>
               <p>{t('footer.address.street')}</p>
               <p>{t('footer.address.city')}</p>
               <p>{t('footer.address.country')}</p>
