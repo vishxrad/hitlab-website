@@ -100,10 +100,10 @@ const categories = [
     papers: [
       { id: 'hm-1', title: 'Autoantibody profiling of monoamine oxidase A knockout mice', authors: 'Syu, G. D., et al.', year: '2023 Jan', link: 'https://www.sciencedirect.com/science/article/pii/S0889159122004068?via%3Dihub' },
       { id: 'hm-2', title: 'Discovery and characterization of cross-reactive intrahepatic antibodies', authors: 'R. N., et al.', year: '2023', link: 'https://www.biorxiv.org/content/10.1101/2023.02.23.529702v1' },
-      { id: 'hm-3', title: 'Ectopic ATP synthase stimulates secretion of extracellular vesicles', authors: 'Ahmadi, A. R., et al.', year: '2023 Dec', link: 'https://www.airitilibrary.com/Article/Detail/10284559-200809-47-3-341-342-a' },
-      { id: 'hm-4', title: 'High-Throughput Chip Assay for Investigating E. coli Interaction with Human Proteins', authors: 'Feng Y, et al.', year: '2018, Sep', link: 'https://pubs.acs.org/doi/10.1021/acs.analchem.8b02513' },
-      { id: 'hm-5', title: 'Heterogeneous ribonucleoprotein K (hnRNP K) binds miR-122 to regulate hepatitis C virus', authors: 'Fan B, et al.', year: '2015', link: 'https://www.sciencedirect.com/science/article/pii/S1535947620325962?via%3Dihub' },
-      { id: 'hm-6', title: 'A human proteome microarray identifies hnRNP K as a new target', authors: 'Fan B, et al.', year: '2014', link: 'https://www.sciencedirect.com/science/article/pii/S1535947620342614?via%3Dihub' }
+      // { id: 'hm-3', title: 'Ectopic ATP synthase stimulates secretion of extracellular vesicles', authors: 'Ahmadi, A. R., et al.', year: '2023 Dec', link: 'https://www.airitilibrary.com/Article/Detail/10284559-200809-47-3-341-342-a' },
+      { id: 'hm-3', title: 'High-Throughput Chip Assay for Investigating E. coli Interaction with Human Proteins', authors: 'Feng Y, et al.', year: '2018, Sep', link: 'https://pubs.acs.org/doi/10.1021/acs.analchem.8b02513' },
+      { id: 'hm-4', title: 'Heterogeneous ribonucleoprotein K (hnRNP K) binds miR-122 to regulate hepatitis C virus', authors: 'Fan B, et al.', year: '2015', link: 'https://www.sciencedirect.com/science/article/pii/S1535947620325962?via%3Dihub' },
+      { id: 'hm-5', title: 'A human proteome microarray identifies hnRNP K as a new target', authors: 'Fan B, et al.', year: '2014', link: 'https://www.sciencedirect.com/science/article/pii/S1535947620342614?via%3Dihub' }
     ]
   },
   {
