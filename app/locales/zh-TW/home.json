@@ -30,7 +30,7 @@
     }
   },
   "comparison": {
-    "newTitle": "為什麼要使用蛋白質組微陣列而不是 ELISA？",
+    "newTitle": "蛋白質陣列： 為什麼要使用蛋白質組微陣列而不是ELISA",
     "newSubtitle": "ELISA 是一種靶向性強、假設驅動的驗證方法，而蛋白質組微陣列是一種高通量發現平台，可以一次對數千種蛋白質進行無偏篩選。",
     "tableHeader": {
       "elisa": "傳統 ELISA",
