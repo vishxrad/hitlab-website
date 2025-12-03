@@ -4,44 +4,104 @@
   "readMore": "Read more",
   "articles": [
     {
-      "id": 1,
-      "title": "✨ [2025 7th Joint Conference on Multi-Omics and Precision Medicine MOPM Taiwan Taipei] Successfully Concluded! 🔬",
-      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-217248,r11.php?Lang=zh-tw"
+      "id": "recruitment-bd-intern",
+      "title": "Recruitment: Business Development & Strategy Intern",
+      "date": "Dec 01, 2025",
+      "category": "Recruitment",
+      "tags": ["Internship", "Business Development", "Marketing"],
+      "image": "/images/blog/recruitment.jpg",
+      "excerpt": "We are hiring! Join the HitLab Alliance as a Business Development intern to help promote protein microarray technology.",
+      "content": "The 'High-Throughput Protein Microarray Technology and Biomedical Industry Service Alliance' is looking for a Business Development & Strategy Intern.\n\n**Role:**\nAssist in promoting the industrial application of 'Protein Microarray Chip Technology'.\n\n**Responsibilities:**\n- Participate in alliance business model and marketing strategy discussions.\n- Maintain alliance website updates and operations.\n- Assist in creating presentations, emails, and social media marketing proposals.\n- Assist in planning and executing technical seminars and industry matchmaking events.\n\n**Requirements:**\n- High interest in startup development and biotech industry opportunities.\n- Students from Management, Medicine, Information Management, Life Sciences, etc. are welcome.\n- Strong communication skills, logical thinking, and presentation skills.\n\n**Work Time:** ~10 hours/week\n**Location:** NCKU Cheng-Hsing Campus\n**Pay:** 200 TWD/hour"
     },
     {
-      "id": 2,
-      "title": "Mastering Future Trends: [Food Safety Institute x Interdisciplinary Course] Industrialization and Expansion of Innovative Technical Services",
-      "link": "https://htpm.web2.ncku.edu.tw/p/405-1217-216731,c26725.php?Lang=zh-tw"
+      "id": "cpcc-2025",
+      "title": "2025 Clinical Proteomics on a Chip Conference (CPCC)",
+      "date": "Jan 20, 2025",
+      "category": "Conference",
+      "tags": ["CPCC", "Proteomics", "Clinical"],
+      "image": "/images/blog/cpcc-2025.jpg",
+      "excerpt": "The CPCC forum focuses on the innovation and application of protein microarray technology in precision medicine.",
+      "content": "The 'Clinical Proteomics on a Chip Conference' (CPCC) is hosted by the High-Throughput Protein Microarray Technology and Biomedical Industry Service Alliance. Based in Taiwan, this forum is dedicated to promoting the innovation and application of protein microarray technology in the field of precision medicine.\n\n**Forum Goals:**\n- Build a world-class high-throughput platform.\n- Connect clinical research with the biomedical industry.\n- Analyze antibody-drug binding profiles.\n- Assist in biomarker discovery and off-target assessment.\n\nThe forum will focus on the latest applications and trends in proteome microarrays, sharing the Alliance's research results and innovative technologies."
     },
     {
-      "id": 3,
-      "title": "Protein Microarray Technology | Leading Solutions for High-Throughput Protein Analysis and Applications",
-      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-216481,r11.php?Lang=zh-tw"
+      "id": "mopm-2025",
+      "title": "2025 7th Joint Conference on Multi-Omics and Precision Medicine (MOPM) Successfully Concluded!",
+      "date": "Nov 09, 2025",
+      "category": "News",
+      "tags": ["Conference", "Precision Medicine", "Multi-Omics"],
+      "image": "/images/blog/mopm-2025.jpg",
+      "excerpt": "The HitLab team participated in the MOPM conference, sharing our vision for 'Biomedical GPUs' and the future of wafer-based proteomics.",
+      "content": "On the weekend of November 8-9, 2025, the NCKU HitLab team brought decades of experience and passion for precision medicine to the 7th Joint Conference on Multi-Omics and Precision Medicine (MOPM) in Taipei. \n\nWe shared key insights on 'Proteomics' and our core vision: using Wafer-Based Mechanism Proteomics as the 'GPU of the Biomedical World' to propel disease diagnosis and exploration into a new era of 'Real-time and Precision'. \n\nWe believe that through collaboration with medical partners (we have already collaborated with major teaching hospitals across Taiwan), we can accelerate the clinical application of these technologies."
     },
     {
-      "id": 4,
-      "title": "Review [2025 Antibody Drugs and 20th Advanced Biomedical Knowledge Symposium]",
-      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-216452,r11.php?Lang=zh-tw"
+      "id": "course-innovation-2025",
+      "title": "Mastering Future Trends: Industrialization and Expansion of Innovative Technical Services",
+      "date": "Sep 01, 2025",
+      "category": "Announcement",
+      "tags": ["Course", "Education", "B2B"],
+      "image": "/images/blog/course-innovation.jpg",
+      "excerpt": "A new interdisciplinary course by the Food Safety Institute teaching how to transform lab technology into scalable market services.",
+      "content": "Have you ever imagined how cutting-edge laboratory technology can be transformed into hot services in the market? \n\nThis course, 'Industrialization and Expansion of Innovative Technical Services', focuses on entrepreneurship, unique business design, technology translation, complex B2B business models, practical Minimum Viable Service (MVS), and forward-looking platform strategies. \n\n**Course Highlights:**\n- **Practical Orientation:** Learn to develop innovative technologies from a single service concept into a scalable platform.\n- **Strategic Thinking:** Deep dive into 'Lean Startup' and 'B2B Business Design'.\n- **Hands-on Implementation:** From market pain point interviews to professional Pitch Decks.\n- **Interdisciplinary Co-creation:** Encouraging students from engineering, medicine, life sciences, management, and social sciences to team up.\n\n**Instructors:** Chen Jiansheng, Qiu Shifeng."
     },
     {
-      "id": 5,
-      "title": "High-Throughput Protein Microarray Chip Technology and Biomedical Industry Service Alliance Workshop",
-      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-215600,r11.php?Lang=zh-tw"
+      "id": "symposium-antibody-2025",
+      "title": "Review: 2025 Antibody Drugs and 20th Advanced Biomedical Knowledge Symposium",
+      "date": "May 27, 2025",
+      "category": "News",
+      "tags": ["Symposium", "Antibody Drugs", "Biotech"],
+      "image": "/images/blog/antibody-symposium.jpg",
+      "excerpt": "HitLab showcased our High-Throughput Protein Microarray technology at the National Biotechnology Research Park.",
+      "content": "The NCKU HitLab team participated in the 'Antibody Drugs and 20th Frontiers in Biomedical Sciences Conference' held on May 26-27, 2025, at the National Biotechnology Research Park. \n\nThe event, co-hosted by the Biomedical Translation Research Center of Academia Sinica, the Taiwan Antibody Association, and the Professor Lin Rongyao Academic Education Foundation, attracted numerous professionals from industry, government, and academia. \n\nOur team set up a booth to actively introduce High-Throughput Protein Microarray technology services to experts, clinical medical professionals, and the biotech industry. We highlighted our capabilities in:\n- Precise analysis of antibody specificity\n- Broad analysis of protein interactions using proteome chips\n- Support for drug target analysis and disease biomarker screening"
     },
     {
-      "id": 6,
-      "title": "Alliance Publications",
-      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-215473,r11.php?Lang=zh-tw"
+      "id": "workshop-microarray-2025",
+      "title": "High-Throughput Protein Microarray Chip Technology Workshop",
+      "date": "May 03, 2025",
+      "category": "Announcement",
+      "tags": ["Workshop", "Training", "Microarray"],
+      "image": "/images/blog/microarray-workshop.jpg",
+      "excerpt": "Join us for a hands-on workshop on Protein Microarray Technology at NCKU Cheng-Hsing Campus.",
+      "content": "We are pleased to announce the 'High-Throughput Protein Microarray Chip Technology and Biomedical Industry Service Alliance Workshop - Aspects of Proteomics'.\n\n**Date:** Saturday, May 3, 2025\n**Location:** Phoenix Cup Lecture Hall, Biomedical Excellence Building, NCKU Cheng-Hsing Campus\n\nThis workshop is designed for researchers and students interested in high-throughput protein analysis. We will cover the principles of microarray technology, experimental design, and data analysis."
     },
     {
-      "id": 7,
-      "title": "Core Service Solutions",
-      "link": "https://htpm.web2.ncku.edu.tw/p/406-1217-215470,r11.php?Lang=zh-tw"
+      "id": "protein-microarray-tech",
+      "title": "Protein Microarray Technology: Leading Solution for High-Throughput Analysis",
+      "date": "Jan 15, 2025",
+      "category": "Technology",
+      "tags": ["Proteomics", "Microarray", "Research"],
+      "image": "/images/blog/protein-tech.jpg",
+      "excerpt": "An in-depth look at Protein Microarray technology, its types, production process, and wide-ranging applications in biomedical research.",
+      "content": "Protein Microarray is an advanced high-throughput technology capable of simultaneously analyzing the expression, binding capabilities, and functional activities of thousands of proteins. By immobilizing large quantities of proteins on a solid surface, we can rapidly acquire information on protein-protein interactions and biological activities.\n\n**Types of Protein Microarrays:**\n- **Analytical Arrays:** Use antibodies or aptamers for quantitative analysis of protein expression.\n- **Reverse Phase Protein Microarrays (RPPA):** For detecting specific proteins and post-translational modifications in cell lysates.\n- **Functional Arrays:** Study interaction activities and enzymatic functions.\n\n**Applications:**\n- Protein-Protein Interaction Studies\n- Post-Translational Modification Analysis\n- Biomarker Identification\n- Antibody Specificity Analysis"
     },
     {
-      "id": 8,
-      "title": "Alliance Introduction",
-      "link": "https://htpm.web2.ncku.edu.tw/p/404-1217-215469.php?Lang=zh-tw"
+      "id": "alliance-intro",
+      "title": "About the Alliance: Bridging Industry and Academia",
+      "date": "Jan 10, 2025",
+      "category": "Alliance",
+      "tags": ["Collaboration", "Industry", "Biomedical"],
+      "image": "/images/blog/alliance-intro.jpg",
+      "excerpt": "The High-Throughput Protein Microarray Technology and Biomedical Industry Service Alliance is dedicated to accelerating precision medicine.",
+      "content": "The 'High-Throughput Protein Microarray Technology and Biomedical Industry Service Alliance' is committed to promoting the application of high-throughput protein microarray technology in the biomedical field. We build a platform for industry-academia cooperation to accelerate progress in precision medicine, antibody screening, disease diagnosis, and biomarker development.\n\n**Our Mission:**\n- Provide high-throughput protein production and microarray technology to support clinical research.\n- Construct a blood antibodyome biomarker bank.\n- Provide customized microarray chip services.\n- Promote industry-academia collaboration to develop new microarray technologies."
+    },
+    {
+      "id": "core-services",
+      "title": "Core Service Solutions: From Chips to Clinical Research",
+      "date": "Jan 05, 2025",
+      "category": "Services",
+      "tags": ["Services", "Clinical", "Drug Development"],
+      "image": "/images/blog/core-services.jpg",
+      "excerpt": "Explore our comprehensive range of services including Protein Microarray Chips, Clinical Research, and Drug Target Analysis.",
+      "content": "We offer a comprehensive suite of core services designed to meet the needs of modern biomedical research:\n\n**Protein Microarray Chips:**\nState-of-the-art whole-genome protein microarrays covering 4,300 E. coli, 5,800 Yeast, and 21,000 Human proteins on a single wafer. This allows for precise analysis of antibody antigens and biomarker discovery.\n\n**Clinical Research & Diagnosis:**\nScreening for disease biomarkers to promote the development of precision medicine.\n\n**Drug Target Analysis:**\nDeveloping target analysis technologies to assist pharmaceutical companies in new drug development, mechanism of action studies, and drug response prediction.\n\n**Antibody Microarray Chips:**\nSuitable for AKT, MAPK signaling pathway analysis and biomarker research."
+    },
+    {
+      "id": "alliance-pubs",
+      "title": "Alliance Publications and Resources",
+      "date": "Jan 01, 2025",
+      "category": "Resources",
+      "tags": ["Publications", "Data", "Analysis"],
+      "image": "/images/blog/alliance-pubs.jpg",
+      "excerpt": "Access our latest research findings, statistical analysis tools, and protein chip theme analysis resources.",
+      "content": "Stay informed with the latest outputs from the Alliance. We provide access to a variety of resources including:\n\n- **Protein Chip Theme Analysis Tool:** A powerful tool for statistical analysis of protein chip data.\n- **Research Publications:** Peer-reviewed papers and articles showcasing the application of our microarray technology.\n- **Case Studies:** Real-world examples of how our technology is solving complex biomedical problems.\n\nSelect a topic of interest to explore our database of E. coli, Yeast, and Human proteome microarray chip data."
     }
   ]
 }
