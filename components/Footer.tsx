@@ -52,10 +52,9 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4 uppercase">{t('footer.followUs')}</h3>
             <ul className="text-sm space-y-2">
               {/* <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.guidelines')}</a></li> */}
-              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.linkedin')}</a></li>
-              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.youtube')}</a></li>
+              <li><a href="https://www.linkedin.com/company/proteome-array-alliance" className="hover:underline hover:text-blue-600">{t('footer.social.linkedin')}</a></li>
+              <li><a href="https://www.youtube.com/@NCKUHitLab" className="hover:underline hover:text-blue-600">{t('footer.social.youtube')}</a></li>
               <li><a href="https://www.facebook.com/nckuhitlab/" className="hover:underline hover:text-blue-600">{t('footer.social.facebook')}</a></li>
-              <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.twitter')}</a></li>
               <li><a href="https://www.instagram.com/nckuhitlab/" className="hover:underline hover:text-blue-600">{t('footer.social.instagram')}</a></li>
               {/* <li><a href="#" className="hover:underline hover:text-blue-600">{t('footer.social.tiktok')}</a></li> */}
             </ul>
