@@ -5,7 +5,15 @@
   },
   "surfaceChemistry": {
     "title": "Advanced Surface Modification",
-    "description": "We utilize an optimized Aldehyde Silane Coating (APTES-GA) method. This ensures high protein immobilization efficiency and low background noise."
+    "description": "We utilize an optimized Aldehyde Silane Coating (APTES-GA) method. This ensures high protein immobilization efficiency and low background noise.",
+    "highEfficiency": {
+      "title": "High Efficiency",
+      "description": "Optimized protein immobilization."
+    },
+    "lowNoise": {
+      "title": "Low Noise",
+      "description": "Minimal background interference."
+    }
   },
   "workflow": {
     "title": "The Chip Assay Process",
@@ -84,6 +92,8 @@
     "caseStudies": "Case studies (placeholders)"
   },
   "applications": {
+    "title": "Advanced Applications of Protein Microarrays",
+    "description": "From decoding immune responses to mapping complex molecular interactions, our platform enables breakthrough discoveries across diverse biological fields.",
     "interactions": {
       "title": "Multi-Omics Interaction Profiling",
       "description": "Deciphering complex biological networks through simultaneous analysis of Protein-Protein, Protein-Nucleic Acid (DNA/RNA/miRNA), and Protein-Lipid interactions.",

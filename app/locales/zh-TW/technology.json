@@ -1,11 +1,19 @@
 {
   "hero": {
-    "title": "利用高通量微陣列解碼免疫系統",
-    "subtitle": "抗體就像過去感染的指紋。我們的平台讓您能夠以高特異性精確地觀察病患的免疫系統對哪些細菌蛋白質產生反應。"
+    "title": "以高通量微陣列解碼免疫系統",
+    "subtitle": "抗體就像過去感染的「指紋」。我們的平台能以高度特異性清楚呈現患者的免疫系統究竟對哪些細菌蛋白產生反應。"
   },
   "surfaceChemistry": {
-    "title": "先進表面修飾技術",
-    "description": "我們採用優化的醛基矽烷塗層 (APTES-GA) 方法。這確保了高蛋白質固定效率和低背景雜訊。"
+    "title": "進階表面修飾技術",
+    "description": "我們採用優化的醛基矽烷塗層（APTES-GA）方法，確保高蛋白固定效率並降低背景雜訊。",
+    "highEfficiency": {
+      "title": "高效率",
+      "description": "經優化的蛋白固定能力。"
+    },
+    "lowNoise": {
+      "title": "低雜訊",
+      "description": "背景干擾極低。"
+    }
   },
   "workflow": {
     "title": "晶片檢測流程",
@@ -30,17 +38,17 @@
     "diagramLabel": "完整流程圖"
   },
   "results": {
-    "title": "高密度。高靈敏度。",
-    "description": "體驗具有卓越信噪比的高通量篩選能力。"
+    "title": "高密度、高靈敏度",
+    "description": "高效能低雜訊的高通量篩選技術。"
   },
   "portfolio": {
     "title": "我們的晶片產品組合",
-    "description": "滿足多樣化研究需求的全面蛋白質組覆蓋。",
+    "description": "涵蓋全面的蛋白質體，滿足多元研究需求。",
     "human": {
       "title": "人類蛋白質組",
       "count": "~21,000 種蛋白質",
       "description": "用於自體抗體篩選的高密度人類蛋白質覆蓋。",
-      "provider": "由 CDI Labs (美國) 提供"
+      "provider": "由 CDI Labs 提供"
     },
     "yeast": {
       "title": "酵母菌蛋白質組",
@@ -84,6 +92,8 @@
     "caseStudies": "案例研究（佔位符）"
   },
   "applications": {
+    "title": "蛋白質微陣列的進階應用",
+    "description": "從解析免疫反應到描繪複雜的分子互動，我們的平台能在多元生物領域中推動突破性的發現。",
     "interactions": {
       "title": "多組學相互作用分析",
       "description": "透過同時分析蛋白質-蛋白質、蛋白質-核酸 (DNA/RNA/miRNA) 和蛋白質-脂質相互作用，解碼複雜的生物網絡。",

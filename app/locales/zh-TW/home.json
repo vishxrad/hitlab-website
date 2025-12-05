@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "從<highlight>全蛋白質組結合圖譜</highlight>，賦能<highlight>藥物開發與精準醫療</highlight>的關鍵決策",
+    "title": "從<highlight>全蛋白質組結合圖譜</highlight>，到<highlight>藥物開發與精準醫療</highlight>的關鍵決策",
     "subtitle": "Proteome Array Alliance 提供用於生物標記發現的高密度蛋白質微陣列與篩選服務。"
   },
   "ourTechnology": "我們的技術",
@@ -30,12 +30,12 @@
     }
   },
   "comparison": {
-    "newTitle": "蛋白質陣列： 為什麼要使用蛋白質組微陣列而不是ELISA",
+    "newTitle": "為什麼要使用高通量蛋白質組微陣列而不是 ELISA?",
     "newSubtitle": "ELISA 是一種靶向性強、假設驅動的驗證方法，而蛋白質組微陣列是一種高通量發現平台，可以一次對數千種蛋白質進行無偏篩選。",
     "tableHeader": {
       "elisa": "傳統 ELISA",
       "comparison": "比較",
-      "paa": "High-Throughput Proteome Microarrays "
+      "paa": "高通量蛋白質組微陣列"
     },
     "features": {
       "throughput": {
@@ -73,7 +73,7 @@
   "cta": {
     "title": "準備好加速您的研究了嗎？",
     "subtitle": "今天就加入我們。",
-    "description": "無論您是研究生物標記的醫生，還是利用蛋白質組陣列進行藥物發現的生物技術公司，我們的高通量蛋白質微陣列都能改變您的流程。",
+    "description": "無論您是研究生物標記的醫生，還是利用蛋白質組陣列進行藥物發現的生物技術公司，我們的高通量蛋白質組微陣列都能改變您的流程",
     "getInTouch": "聯繫我們",
     "learnMore": "了解更多"
   }

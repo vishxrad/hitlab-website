@@ -77,12 +77,12 @@ export default function TechnologyPage() {
               {/* Feature Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 bg-slate-800 rounded-lg border-l-4 border-blue-500 shadow-lg">
-                  <h4 className="font-bold text-lg text-white">High Efficiency</h4>
-                  <p className="text-sm text-slate-400 mt-1">Optimized protein immobilization.</p>
+                  <h4 className="font-bold text-lg text-white">{t('technology.surfaceChemistry.highEfficiency.title')}</h4>
+                  <p className="text-sm text-slate-400 mt-1">{t('technology.surfaceChemistry.highEfficiency.description')}</p>
                 </div>
                 <div className="p-4 bg-slate-800 rounded-lg border-l-4 border-emerald-500 shadow-lg">
-                  <h4 className="font-bold text-lg text-white">Low Noise</h4>
-                  <p className="text-sm text-slate-400 mt-1">Minimal background interference.</p>
+                  <h4 className="font-bold text-lg text-white">{t('technology.surfaceChemistry.lowNoise.title')}</h4>
+                  <p className="text-sm text-slate-400 mt-1">{t('technology.surfaceChemistry.lowNoise.description')}</p>
                 </div>
               </div>
             </div>
@@ -211,10 +211,10 @@ export default function TechnologyPage() {
         <section className="space-y-16 py-12">
           <div className="text-center max-w-4xl mx-auto space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-              Advanced Applications of <span className="text-blue-600">Protein Microarrays</span>
+              {t('technology.applications.title')}
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              From decoding immune responses to mapping complex molecular interactions, our platform enables breakthrough discoveries across diverse biological fields.
+              {t('technology.applications.description')}
             </p>
           </div>
           <ProteinArrayApp />
