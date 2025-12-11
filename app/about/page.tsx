@@ -162,7 +162,7 @@ export default function AboutPage() {
                 <div className="h-32 w-32 bg-gray-200 rounded-full mb-6 flex items-center justify-center text-gray-400 overflow-hidden mx-auto">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://media.licdn.com/dms/image/v2/C4E03AQHkF4JUFnSw3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516646447791?e=1765411200&v=beta&t=MsLJJLr6diIQA-zMXZrZWx5PV240tmO-pylC2e9yxLc"
+                    src="https://media.licdn.com/dms/image/v2/C4E03AQHkF4JUFnSw3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516646447791?e=1767225600&v=beta&t=t7twfL0ZQgWlkmq0agLkHP9HsHHxLEtlL-Pw0zMR0Ng"
                     alt="Dr. Chien-Sheng (Jason) Chen"
                     className="h-full w-full object-cover"
                   />

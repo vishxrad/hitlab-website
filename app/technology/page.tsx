@@ -153,8 +153,6 @@ export default function TechnologyPage() {
           </div>
         </section>
 
-
-
         {/* Section 5: Chip Portfolio */}
         <section className="space-y-12">
           <div className="text-center max-w-3xl mx-auto space-y-4">
