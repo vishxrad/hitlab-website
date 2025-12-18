@@ -19,15 +19,15 @@
     "title": "晶片檢測流程",
     "steps": {
       "immobilization": {
-        "title": "1. 固定",
+        "title": "1. 固定化",
         "description": "約 4,300 種大腸桿菌蛋白質固定在醛基矽烷塗層晶片上。"
       },
       "blocking": {
-        "title": "2. 封閉與清洗",
+        "title": "2. Blocking & Wash",
         "description": "使用 PBS 中的 3% BSA 封閉晶片以防止非特異性結合。"
       },
       "incubation": {
-        "title": "3. 孵育",
+        "title": "3. Incubation",
         "description": "與人類血漿 (1:4000) 孵育，隨後加入螢光二級抗體。"
       },
       "analysis": {
