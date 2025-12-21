@@ -1,5 +1,6 @@
 {
   "title": "Data Analysis Tools",
+  "launchTool": "Launch Tool",
   "sam": {
     "title": "SAM (Significance Analysis of Microarray)",
     "whatIsIt": {
@@ -30,31 +31,43 @@
     }
   },
   "bapcp": {
-    "title": "BAPCP & PCP",
+    "title": "BAPCP (Biomarker Analysis tool for Protein Chip Platforms)",
     "whatIsIt": {
       "title": "What is it?",
-      "content": "BAPCP (Bayesian Analysis of Protein Chip Data) and PCP are advanced statistical tools designed for the rigorous analysis of protein microarray data. They provide a comprehensive framework for identifying significant protein interactions and biomarkers."
+      "content": "BAPCP is a comprehensive web-based platform designed specifically for the analysis of protein microarray data. It streamlines the process of identifying biomarkers by integrating standard GenePix Results (.gpr) files and providing a user-friendly interface for complex statistical analyses."
     },
-    "whenIsItUsed": {
-      "title": "When is it used?",
-      "content": "These tools are essential when researchers need to analyze high-throughput protein microarray data to identify potential biomarkers or protein interactions with high confidence, especially in complex datasets."
+    "capabilities": {
+      "title": "Key Capabilities",
+      "content": "It offers a robust suite of tools including 7 different normalization methods to correct for systematic variation, and 7 distinct quality control and differential analysis filters. These features allow researchers to confidently extract meaningful biomarkers from experimental groups."
     },
-    "howDoesItWork": {
+    "workflow": {
       "title": "How does it work?",
-      "example": {
-        "title": "BAPCP Example",
-        "description": "Analyzing a dataset of protein interactions to distinguish true signals from noise using Bayesian statistical models."
-      },
       "steps": [
-        "Data preprocessing and normalization to ensure data quality.",
-        "Application of Bayesian statistical models to estimate signal and noise components.",
-        "Identification of significant hits based on posterior probabilities.",
-        "Visualization of results to facilitate interpretation."
+        "Data Upload: Users upload .gpr, .xls, or .csv files for multiple experimental conditions.",
+        "Preprocessing: Select from normalization methods like Quantile or RobustScaler to align signal distributions.",
+        "Analysis: Apply statistical tests and filters to identify differentially expressed proteins.",
+        "Visualization: Generate interactive box plots, heatmaps, and volcano plots to visualize the results."
       ]
+    }
+  },
+  "pcp": {
+    "title": "PCP (Protein Chip Platform)",
+    "whatIsIt": {
+      "title": "What is it?",
+      "content": "The Protein Chip Platform (PCP) is a versatile analysis tool tailored for protein microarray studies. It focuses on providing a flexible environment for data normalization, filtering, and statistical testing, making it easier to compare experimental and control groups."
     },
-    "dataLookLike": {
-      "title": "What does the data look like?",
-      "content": "The output includes lists of significant proteins, statistical scores (such as posterior probabilities), and graphical representations of the data distribution and identified hits."
+    "capabilities": {
+      "title": "Key Capabilities",
+      "content": "PCP supports a wide range of normalization techniques (Median, Mean, Quantile) and statistical tests (T-test, U-test). It also includes advanced filtering options based on signal intensity, Coefficient of Variation (CV), and Z-scores to ensure high-quality data analysis."
+    },
+    "workflow": {
+      "title": "How does it work?",
+      "steps": [
+        "Input: Upload raw data files for experimental and control groups.",
+        "Configuration: Choose specific fields to analyze (e.g., F650 Median) and apply background correction.",
+        "Normalization: Apply mathematical transformations to normalize the data across chips.",
+        "Statistical Testing: Run T-tests or U-tests to determine statistical significance and identify potential targets."
+      ]
     }
   }
 }
