@@ -76,34 +76,5 @@
     "description": "Whether you're a doctor researching biomarkers or a biotech company using proteome arrays for drug discovery, our high-throughput protein microarrays can transform your process.",
     "getInTouch": "Get in touch",
     "learnMore": "Learn more"
-  },
-  "sam": {
-    "title": "SAM (Significance Analysis of Microarray)",
-    "whatIsIt": {
-      "title": "What is it?",
-      "content": "SAM is a method used for large-scale gene or protein expression data like those collected with microarrays. It addresses the issue of analyzing large-scale data in which a microarray experiment of 10,000 proteins would identify 100 proteins by chance using a p-value cut-off of 0.01. Therefore, SAM applies a t-test at the individual gene or protein level to determine whether the expression pattern for that gene or protein is significant."
-    },
-    "whenIsItUsed": {
-      "title": "When is it used?",
-      "content": "This test is performed when the samples 1) may not be independent of each other and 2) are or are not normally distributed. It can help identify expression patterns that have little difference between the control and test groups but are nevertheless significant."
-    },
-    "howDoesItWork": {
-      "title": "How does it work?",
-      "example": {
-        "title": "SAM Example",
-        "description": "We want to find serological proteins that are different between 12 healthy and 12 diseased patients using an antibody-based microarray targeting 1,000 proteins."
-      },
-      "steps": [
-        "The observed relative difference per protein across groups is determined, which considers the mean and variance of each group. This step accounts for protein-specific fluctuations.",
-        "The expected relative difference per protein across groups is determined by averaging the protein responses across numerous permutations. Random permutations form a simulated distribution of expected relative differences (like a t-statistic).",
-        "Plot the observed vs expected relative difference. This is a visual way of looking at the data.",
-        "Identify proteins-of-interest that deviate from the diagonal line using a threshold. The threshold is determined by calculating false discovery rates (FDRs) using data from the permutations.",
-        "Determine the statistical significance of the proteins-of-interest. Biomarkers with larger deviations between the observed and expected relative difference are deemed significant."
-      ]
-    },
-    "dataLookLike": {
-      "title": "What does the data look like?",
-      "content": "For each gene or protein, SAM produces a test statistic value based upon the observed value’s deviation from the expected value. Unlike other models that use a p-value or FDR, SAM determines significance based on the deviation of the observed data from the expected value; the expected value is based on numerous permutations of the original data."
-    }
   }
 }

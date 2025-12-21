@@ -16,6 +16,9 @@ const Navbar = () => {
           <Link href="/technology" className="text-gray-600 hover:text-blue-600">
             {t('header.technology')}
           </Link>
+          <Link href="/tools" className="text-gray-600 hover:text-blue-600">
+            {t('header.dataAnalysisTools')}
+          </Link>
           <Link href="/about" className="text-gray-600 hover:text-blue-600">
             {t('header.aboutUs')}
           </Link>
