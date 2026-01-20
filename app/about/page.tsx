@@ -1,6 +1,6 @@
 'use client';
 import { useTranslation, Trans } from 'react-i18next';
-import { Target, Users, Search, Database, Mail, MapPin, Phone, Play } from 'lucide-react';
+import { Target, Users, Search, Database, Mail, MapPin, Phone, Play, Microscope, Dna, Zap, Shield, Bug, Activity, BarChart3, Network, Settings, Globe, CheckCircle } from 'lucide-react';
 
 export default function AboutPage() {
   const { t } = useTranslation();
@@ -150,7 +150,57 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 5. LEADERSHIP (Existing) */}
+      {/* 5. RESEARCH OVERVIEW */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900">{t('about.research_overview.title')}</h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+              Explore the interdisciplinary research field at the intersection of proteomics, biosensing, and translational medicine
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            {(t('about.research_overview.sections', { returnObjects: true }) as any[]).map((section, index) => {
+              const icons = [
+                Network, // The Intersection of Disciplines
+                Microscope, // Proteomics Beyond Protein Abundance
+                Zap, // High-Throughput Biosensing
+                Shield, // Antibodyome Profiling
+                Bug, // Host–Microbe Interaction
+                Activity, // Biomarker Discovery
+                Dna, // Integration with Bioinformatics
+                Settings, // Translation, Standardization
+                Globe, // Position Within Modern Life Sciences
+                CheckCircle // Conclusion
+              ];
+              const IconComponent = icons[index] || Network;
+              
+              return (
+                <div key={index} className={`bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow ${
+                  index % 2 === 0 ? 'lg:mt-0' : 'lg:mt-8'
+                }`}>
+                  <div className="flex items-center mb-6">
+                    <div className="bg-blue-100 p-3 rounded-lg text-blue-700 mr-4">
+                      <IconComponent className="w-6 h-6" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900">{section.title}</h3>
+                  </div>
+                  <div className="text-gray-700 leading-relaxed">
+                    {section.content.split('\n\n').map((paragraph, pIndex) => (
+                      <p key={pIndex} className="mb-4 last:mb-0 text-sm">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. LEADERSHIP (Existing) */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">{t('about.leadership.title')}</h2>
@@ -260,7 +310,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 6. CORE TEAM MEMBERS */}
+      {/* 7. CORE TEAM MEMBERS */}
       <section className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -294,7 +344,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 7. CONTACT SECTION (New) */}
+      {/* 8. CONTACT SECTION (New) */}
       <section className="py-24 bg-white border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

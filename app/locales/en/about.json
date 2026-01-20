@@ -196,5 +196,50 @@
     "printer": "Microarray Printer",
     "scanner": "Fluorescence Scanner",
     "bench": "Wet Lab Bench"
+  },
+  "research_overview": {
+    "title": "Research Field Overview",
+    "sections": [
+      {
+        "title": "The Intersection of Disciplines",
+        "content": "The research field represented by NCKU HitLab lies at the intersection of proteomics, nano/micro-biosensing technology, systems biology, and translational medicine. This field addresses a central challenge in modern life sciences: how to comprehensively and efficiently interrogate protein-level interactions that underlie immune responses, disease mechanisms, and biological regulation in complex systems."
+      },
+      {
+        "title": "Proteomics Beyond Protein Abundance",
+        "content": "Traditional proteomics has focused largely on identifying and quantifying proteins using mass spectrometry. While powerful, such approaches are often limited when the biological question involves protein function, interaction specificity, or immune recognition. The research field pursued here shifts the emphasis from protein abundance to protein activity and interaction, particularly antibody–antigen binding and protein–protein interactions. This functional proteomics perspective is essential for understanding immune-mediated diseases, host–pathogen interactions, and biomarker discovery.\n\nProteome microarrays form the technological backbone of this field. By immobilizing thousands of individually purified proteins on a solid surface, proteome microarrays enable parallel, proteome-scale functional assays. Each experiment can simultaneously test thousands of hypotheses, transforming how biological questions are formulated and addressed."
+      },
+      {
+        "title": "High-Throughput Biosensing as a Core Enabler",
+        "content": "At the heart of this research field is high-throughput biosensing. Nano- and micro-scale biosensing technologies are used to detect molecular interactions with high sensitivity, quantitative precision, and reproducibility. These technologies allow weak, transient, or low-abundance interactions—often invisible to conventional assays—to be detected reliably.\n\nBy integrating biosensing with microarray engineering, the field enables rapid screening of biological samples such as serum, plasma, mucosal secretions, or cell lysates against entire proteomes. This capability is particularly critical for immune profiling, where antibody repertoires are diverse, dynamic, and highly individual."
+      },
+      {
+        "title": "Antibodyome Profiling and Immune System Mapping",
+        "content": "One defining pillar of this research field is antibodyome profiling, the systematic analysis of antibody–antigen interactions across the proteome. Unlike targeted immunoassays that measure a small number of predefined antibodies, antibodyome profiling provides a global view of humoral immunity.\n\nThis approach is transformative for studying infectious diseases, autoimmune disorders, allergies, inflammatory conditions, and vaccine responses. By mapping which microbial or self-proteins are recognized by antibodies of different isotypes (e.g., IgG, IgA), researchers can uncover disease-associated immune signatures that are otherwise inaccessible.\n\nImportantly, this field recognizes antibodies not merely as biomarkers, but as functional readouts of immune history—reflecting past infections, microbiota exposure, barrier dysfunction, and immune dysregulation. Proteome-scale antibody profiling therefore bridges immunology, microbiology, and systems biology."
+      },
+      {
+        "title": "Host–Microbe Interaction and Molecular Mimicry",
+        "content": "Another central research axis is the study of host–microbe interactions at the proteome level. Microorganisms encode thousands of proteins, many of which interact directly or indirectly with the human immune system. Traditional microbiology typically examines a limited number of virulence factors; this research field instead interrogates entire microbial proteomes.\n\nOne major concept explored in this area is molecular mimicry, in which microbial proteins share structural or epitope similarity with human proteins. Such similarity can lead to cross-reactive antibodies that target both microbial and host proteins, potentially contributing to autoimmune or inflammatory disease. Proteome microarrays enable systematic identification of these cross-reactive antigens. When combined with bioinformatics, structural analysis, and clinical data, this research field provides mechanistic insight into how infections or microbiota perturbations may trigger immune-mediated pathology."
+      },
+      {
+        "title": "Biomarker Discovery and Precision Medicine",
+        "content": "Biomarker discovery is a major translational outcome of this research field. By analyzing proteome-wide interaction patterns rather than single molecules, the field supports the identification of multidimensional biomarker signatures that reflect disease states more accurately than traditional markers.\n\nThese signatures can be used for early diagnosis, disease stratification, prognosis, and monitoring of therapeutic responses. Because the assays are high-throughput and standardized, they are well suited for clinical cohort studies and precision medicine initiatives.\n\nCrucially, this field emphasizes biomarkers that are functionally informative, such as antibodies that directly engage disease-relevant proteins, rather than purely correlative markers. This functional perspective increases the likelihood that discovered biomarkers have clinical relevance and mechanistic meaning."
+      },
+      {
+        "title": "Integration with Bioinformatics and Systems Biology",
+        "content": "The scale and complexity of proteome microarray data require sophisticated bioinformatics and systems biology frameworks. This research field integrates statistical analysis, network biology, domain annotation, and structural prediction to interpret large datasets.\n\nRather than analyzing hits in isolation, interaction networks and pathway-level patterns are emphasized. This systems-level interpretation allows researchers to move beyond lists of proteins toward biologically coherent models of disease mechanisms and immune regulation.\n\nThe integration of experimental biosensing with computational analysis is a defining feature of the field, enabling hypothesis generation, validation, and refinement in an iterative cycle."
+      },
+      {
+        "title": "Translation, Standardization, and Platform Thinking",
+        "content": "Beyond discovery research, this field places strong emphasis on platform development and translation. Proteome microarray technologies are designed not only as laboratory tools but as service-ready platforms that can be shared across disciplines and institutions.\n\nStandardized workflows, quality control, and reproducible data analysis pipelines are essential components. This platform-oriented mindset facilitates collaboration between academia, hospitals, and biotechnology companies, accelerating the movement from discovery to application.\n\nSuch platforms are particularly valuable for antibody validation, drug target screening, off-target interaction analysis, and immune profiling in translational research."
+      },
+      {
+        "title": "Position Within Modern Life Sciences",
+        "content": "In the broader context of life sciences, this research field occupies a unique niche. It complements genomics and transcriptomics by addressing protein function directly, and it complements mass spectrometry–based proteomics by enabling high-throughput functional assays.\n\nAs biomedical research increasingly recognizes the importance of immune regulation, host–microbe interactions, and systems-level analysis, this field provides essential tools and conceptual frameworks. Its ability to connect molecular interactions with clinical phenotypes makes it especially relevant in the era of precision medicine."
+      },
+      {
+        "title": "Conclusion",
+        "content": "In summary, this research field represents a proteome-scale, biosensing-driven approach to functional biology and immunology. By integrating proteome microarrays, nano/micro-biosensing technologies, antibodyome profiling, host–microbe interaction analysis, and systems biology, it enables comprehensive interrogation of protein interactions that drive health and disease.\n\nThe field advances both fundamental understanding and translational impact, offering a powerful framework for biomarker discovery, immune profiling, and mechanistic insight into complex biological systems."
+      }
+    ]
   }
 }
